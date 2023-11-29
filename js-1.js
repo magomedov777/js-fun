@@ -41,3 +41,12 @@ function stringToArray(string) {
   array.push(temp)
   return array
 }
+
+function sumMix(x) {
+  let a = x.join("").split("")
+  let sum = 0
+  for (let i = 0; i < x.length; i++) {
+    sum += parseInt(a[i])
+  }
+  return sum
+}
