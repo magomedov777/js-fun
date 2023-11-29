@@ -26,3 +26,18 @@ function stringToArray(string) {
   result.push(newStr)
   return result
 }
+
+function stringToArray(string) {
+  let array = []
+  let temp = ""
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] !== " ") {
+      temp += string[i]
+    } else {
+      array.push(temp)
+      temp = ""
+    }
+  }
+  array.push(temp)
+  return array
+}
