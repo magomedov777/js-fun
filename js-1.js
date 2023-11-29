@@ -76,7 +76,7 @@ function removeEveryOther(arr) {
   return newArray
 }
 
-function removeEveryOther(arr) {
+const removeEveryOther = (arr) => {
   return arr.filter(function (elem, index) {
     return index % 2 === 0
   })
