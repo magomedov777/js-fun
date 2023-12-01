@@ -73,3 +73,7 @@ class SmallestIntegerFinder {
     return args.sort((a, b) => a - b)[0]
   }
 }
+
+class SmallestIntegerFinder {
+  findSmallestInt = (args) => Math.min(...args)
+}
