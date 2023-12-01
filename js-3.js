@@ -43,3 +43,8 @@ function summation(num) {
   }
   return count
 }
+
+//short syntax
+const summation = (n) => (n * (n + 1)) / 2
+
+const summation = (num) => ((1 + num) * num) / 2
