@@ -21,3 +21,6 @@ function repeatStr(n, s) {
   for (let i = 0; i < n; i++) str += s
   return str
 }
+
+//short syntax
+repeatStr = (n, s) => s.repeat(n)
