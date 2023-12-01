@@ -12,6 +12,20 @@ for (let i = 0; i < newArray.length; i++) {
   break
 }
 
+const studentsList = [
+  ["Andrew", "John", "Jack"],
+  ["Ann", "Jenifer", "Elizabeth"],
+  ["Alex", "Jason", "Will"],
+]
+
+for (let i = 0; i < studentsList.length; i++) {
+  let studentsResult = studentsList[i]
+  for (let j = 0; j < studentsResult.length; j++) {
+    let newResult = studentsResult[j]
+    document.write(newResult, "<br>")
+  }
+}
+
 function stringToArray(string) {
   let newStr = ""
   let result = []
