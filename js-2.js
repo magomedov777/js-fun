@@ -46,3 +46,15 @@ function removeChar(str) {
   }
   return output_str
 }
+
+function removeChar(str) {
+  let res = ""
+  for (let i = 0; i < str.length; i++) {
+    if (i != 0 && i != str.length - 1) {
+      res += str[i]
+    }
+  }
+  return res
+}
+
+//solution for remove first and last item in array
