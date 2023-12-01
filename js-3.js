@@ -5,3 +5,12 @@ function squareSum(numbers) {
 
 //short syntax | arrow
 squareSum = (num) => num.map((el) => el ** 2).reduce((acc, val) => acc + val, 0)
+
+//with cycle for
+function squareSum(numbers) {
+  let result = 0
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i] * numbers[i]
+  }
+  return result
+}
