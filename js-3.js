@@ -80,3 +80,11 @@ class SmallestIntegerFinder {
 
 //all true in array which contains null & undefined | find all true
 countSheeps = (sheep) => sheep.filter((el) => el === true).length
+
+//solution with cycle for
+const countSheeps = (arrayOfSheep) => {
+  let num = 0
+  for (let i = 0; i < arrayOfSheep.length; i++)
+    if (arrayOfSheep[i] == true) num++
+  return num
+}
