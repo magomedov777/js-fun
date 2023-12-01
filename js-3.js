@@ -77,3 +77,6 @@ class SmallestIntegerFinder {
 class SmallestIntegerFinder {
   findSmallestInt = (args) => Math.min(...args)
 }
+
+//all true in array which contains null & undefined | find all true
+countSheeps = (sheep) => sheep.filter((el) => el === true).length
