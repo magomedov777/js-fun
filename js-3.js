@@ -24,3 +24,13 @@ function repeatStr(n, s) {
 
 //short syntax
 repeatStr = (n, s) => s.repeat(n)
+
+//with cycle while
+function repeatStr(n, s) {
+  let myString = ""
+  while (n > 0) {
+    myString += s
+    n--
+  }
+  return myString
+}
