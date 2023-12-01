@@ -27,3 +27,5 @@ function positiveSum(arr) {
 }
 
 //sum of all positive numbers with for cycle | new solution
+
+const removeChar = (str) => str.slice(1, -1)
