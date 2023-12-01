@@ -48,3 +48,16 @@ function summation(num) {
 const summation = (n) => (n * (n + 1)) / 2
 
 const summation = (num) => ((1 + num) * num) / 2
+
+//find smallest integer in the array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let minNum = args[0]
+    for (let i = 1; i < args.length; i++) {
+      if (args[i] < minNum) {
+        minNum = args[i]
+      }
+    }
+    return minNum
+  }
+}
