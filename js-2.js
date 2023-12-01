@@ -10,3 +10,8 @@ function evenOrOdd(number) {
 }
 
 //other solution
+
+positiveSum = (arr) =>
+  arr.filter((i) => i > 0).reduce((acc, item) => acc + item, 0)
+
+//sum of all positive numbers | arr | short solution
