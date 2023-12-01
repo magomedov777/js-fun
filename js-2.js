@@ -36,3 +36,13 @@ function removeChar(str) {
   str1.pop()
   return str1.join("")
 }
+
+function removeChar(str) {
+  let input_str = str
+  let output_str = ""
+
+  for (let i = 1; i < input_str.length - 1; i++) {
+    output_str += input_str[i]
+  }
+  return output_str
+}
