@@ -58,3 +58,11 @@ function litres(time) {
 function litres(time) {
   return parseInt(time / 2)
 }
+
+//step by step
+
+function litres(time) {
+  const litres = 0.5
+  let drink = litres * time
+  return Math.floor(drink)
+}
