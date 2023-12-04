@@ -49,3 +49,8 @@ basicOp = (operation, value1, value2) => {
 //how litres | alhoritms task
 
 litres = (time) => Math.floor(time * 0.5)
+
+//with '/'
+function litres(time) {
+  return Math.floor(time / 2)
+}
