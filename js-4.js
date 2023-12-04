@@ -1,7 +1,6 @@
 //Basic Mathematical Operations
 
 //if
-
 function basicOp(operation, value1, value2) {
   if (operation === "+") {
     return value1 + value2
@@ -18,7 +17,6 @@ function basicOp(operation, value1, value2) {
 }
 
 //switch case
-
 function basicOp(operation, value1, value2) {
   switch (operation) {
     case "+":
@@ -35,7 +33,6 @@ function basicOp(operation, value1, value2) {
 }
 
 //shorts solution
-
 function basicOp(o, a, b) {
   return eval(a + o + b)
 }
@@ -47,7 +44,6 @@ basicOp = (operation, value1, value2) => {
 }
 
 //how litres | alhoritms task
-
 litres = (time) => Math.floor(time * 0.5)
 
 //with '/'
@@ -60,7 +56,6 @@ function litres(time) {
 }
 
 //step by step
-
 function litres(time) {
   const litres = 0.5
   let drink = litres * time
