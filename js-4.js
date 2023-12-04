@@ -66,3 +66,16 @@ function litres(time) {
   let drink = litres * time
   return Math.floor(drink)
 }
+
+//with cycle for
+function litres(time) {
+  let count = 0
+  let restHours = time
+  for (let i = 0; i < time; i++) {
+    restHours = time - i
+    if (restHours >= 1) {
+      count += 0.5
+    }
+  }
+  return Math.floor(count)
+}
