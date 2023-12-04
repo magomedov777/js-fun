@@ -45,3 +45,7 @@ function basicOp(o, a, b) {
 basicOp = (operation, value1, value2) => {
   eval(`${value1} ${operation} ${value2}`)
 }
+
+//how litres | alhoritms task
+
+litres = (time) => Math.floor(time * 0.5)
