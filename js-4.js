@@ -41,3 +41,7 @@ function basicOp(o, a, b) {
 }
 
 //-----------------------------------
+
+basicOp = (operation, value1, value2) => {
+  eval(`${value1} ${operation} ${value2}`)
+}
