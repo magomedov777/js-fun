@@ -54,3 +54,7 @@ litres = (time) => Math.floor(time * 0.5)
 function litres(time) {
   return Math.floor(time / 2)
 }
+
+function litres(time) {
+  return parseInt(time / 2)
+}
