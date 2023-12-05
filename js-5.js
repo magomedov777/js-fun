@@ -24,3 +24,13 @@ const digitize = (x) => {
   }
   return a
 }
+
+function digitize(n) {
+  return n
+    .toString()
+    .split("")
+    .reverse()
+    .map(function (i) {
+      return parseInt(i)
+    })
+}
