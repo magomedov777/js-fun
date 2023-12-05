@@ -11,3 +11,7 @@ const digitize = (num) =>
     .split("")
     .reverse()
     .map((el) => +el)
+
+function digitize(n) {
+  return Array.from(String(n), Number).reverse()
+}
