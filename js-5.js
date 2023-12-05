@@ -4,3 +4,10 @@ function digitize(n) {
   let res = arr.map((el) => +el)
   return res.reverse()
 }
+
+const digitize = (num) =>
+  num
+    .toString()
+    .split("")
+    .reverse()
+    .map((el) => +el)
