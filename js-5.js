@@ -60,3 +60,16 @@ function isDivisible(n, x, y) {
 function isDivisible(n, x, y) {
   return Number.isInteger(n / x) && Number.isInteger(n / y)
 }
+
+function isDivisible(n, x, y) {
+  return (n % x) + (n % y) == 0
+}
+
+//__________________________________________________
+
+//1 solution
+
+function findNeedle(haystack) {
+  let find = haystack.indexOf("needle")
+  return `found the needle at position ${find}`
+}
