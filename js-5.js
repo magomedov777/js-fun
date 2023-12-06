@@ -105,3 +105,5 @@ function lovefunc(flower1, flower2) {
 function lovefunc(flower1, flower2) {
   return (flower1 + flower2) % 2 == 1
 }
+
+const lovefunc = (Sarah, Timmy) => Boolean((Sarah + Timmy) % 2)
