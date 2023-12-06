@@ -81,3 +81,11 @@ function findNeedle(array) {
     if (array[i] === "needle") return "found the needle at position " + i
   }
 }
+
+//easy solution
+
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.indexOf("needle")}`
+}
+
+//------------------------------------------------
