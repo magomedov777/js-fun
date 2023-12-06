@@ -107,3 +107,12 @@ function lovefunc(flower1, flower2) {
 }
 
 const lovefunc = (Sarah, Timmy) => Boolean((Sarah + Timmy) % 2)
+
+function lovefunc(flower1, flower2) {
+  const num = flower1 + flower2
+  if (num % 2 == 0) {
+    return false
+  } else {
+    return true
+  }
+}
