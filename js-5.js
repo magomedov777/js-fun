@@ -92,3 +92,12 @@ function findNeedle(haystack) {
 
 //1 solution
 lovefunc = (flower1, flower2) => ((flower1 + flower2) % 2 !== 0 ? true : false)
+
+//base
+function lovefunc(flower1, flower2) {
+  if (flower1 % 2 == 0 && flower2 % 2 !== 0) {
+    return true
+  } else if (flower1 % 2 !== 0 && flower2 % 2 == 0) {
+    return true
+  } else return false
+}
