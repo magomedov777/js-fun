@@ -101,3 +101,7 @@ function lovefunc(flower1, flower2) {
     return true
   } else return false
 }
+
+function lovefunc(flower1, flower2) {
+  return (flower1 + flower2) % 2 == 1
+}
