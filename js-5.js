@@ -73,3 +73,11 @@ function findNeedle(haystack) {
   let find = haystack.indexOf("needle")
   return `found the needle at position ${find}`
 }
+
+//solution with cycle for
+
+function findNeedle(array) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === "needle") return "found the needle at position " + i
+  }
+}
