@@ -21,3 +21,8 @@ function maps(x) {
   }
   return arr
 }
+
+//other
+function maps(x) {
+  return x.map((num) => num * 2)
+}
