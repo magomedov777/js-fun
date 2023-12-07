@@ -49,3 +49,5 @@ function paperwork(n, m) {
 
 //other
 const paperwork = (...n) => n.reduce((s, e) => s * Math.max(e, 0), 1)
+
+//________________________________________________________
