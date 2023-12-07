@@ -13,3 +13,11 @@ function maps(x) {
   }
   return arr
 }
+
+function maps(x) {
+  var arr = []
+  for (let i = 0; i < x.length; i++) {
+    arr[i] = x[i] + x[i]
+  }
+  return arr
+}
