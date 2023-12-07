@@ -46,3 +46,6 @@ const paperwork = (n, m) => Math.max(0, n) * Math.max(0, m)
 function paperwork(n, m) {
   return Math.max(0, n) * Math.max(0, m)
 }
+
+//other
+const paperwork = (...n) => n.reduce((s, e) => s * Math.max(e, 0), 1)
