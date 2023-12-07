@@ -37,3 +37,5 @@ function paperwork(n, m) {
   }
   return n * m
 }
+
+paperwork = (n, m) => ((n < 0) | (m < 0) ? 0 : n * m)
