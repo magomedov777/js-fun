@@ -86,3 +86,15 @@ function countPositivesSumNegatives(input) {
   arr.push(input.filter((el) => el < 0).reduce((acc, curr) => acc + curr, 0))
   return arr
 }
+
+//with cycle for
+function countPositivesSumNegatives(input) {
+  if (input == null || input.length == 0) return []
+  let positive = 0
+  let negative = 0
+  for (let i = 0, l = input.length; i < l; ++i) {
+    if (input[i] > 0) ++positive
+    else negative += input[i]
+  }
+  return [positive, negative]
+}
