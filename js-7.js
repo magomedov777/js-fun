@@ -71,3 +71,7 @@ function find_average(array) {
   }
   return result / array.length
 }
+
+//other solution
+const find_average = (array) =>
+  array.reduce((acc, curr) => acc + curr, 0) / array.length || 0
