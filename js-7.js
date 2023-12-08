@@ -85,3 +85,13 @@ function find_average(array) {
   }
   return result / array.length
 }
+
+//------------------------------------------------------
+//new task, first solution
+function betterThanAverage(classPoints, yourPoints) {
+  let sum = classPoints.reduce((acc, curr) => acc + curr) / classPoints.length
+  if (yourPoints > sum) {
+    return true
+  }
+  return false
+}
