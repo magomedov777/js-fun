@@ -41,3 +41,15 @@ function areYouPlayingBanjo(name) {
     ? `${name} plays banjo`
     : `${name} does not play banjo`
 }
+
+//_________________________________________________________
+
+//first solution
+function findAverage(array) {
+  if (!array.length) {
+    return 0
+  }
+  if (array.length) {
+    return array.reduce((acc, cur) => acc + cur) / array.length
+  }
+}
