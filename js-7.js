@@ -101,3 +101,13 @@ function betterThanAverage(classPoints, yourPoints) {
     yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
   )
 }
+
+//with for cycle
+function betterThanAverage(classPoints, yourPoints) {
+  let classAvg = 0
+  for (let i = 0; i < classPoints.length; i++) {
+    classAvg += classPoints[i]
+  }
+  classAvg = classAvg / classPoints.length
+  return yourPoints > classAvg
+}
