@@ -20,3 +20,8 @@ sum = function (numbers) {
 //----------------------------------
 //invert array
 invert = (array) => array.map((el) => -el)
+
+//easy | base
+function invert(array) {
+  return array.map((x) => (x === 0 ? x : -x))
+}
