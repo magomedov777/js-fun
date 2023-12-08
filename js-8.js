@@ -25,3 +25,12 @@ invert = (array) => array.map((el) => -el)
 function invert(array) {
   return array.map((x) => (x === 0 ? x : -x))
 }
+
+//solution with cycle for
+function invert(array) {
+  let newArr = []
+  for (let i = 0; i < array.length; i++) {
+    newArr.push(-array[i])
+  }
+  return newArr
+}
