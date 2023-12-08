@@ -16,3 +16,7 @@ sum = function (numbers) {
   }
   return total
 }
+
+//----------------------------------
+//invert array
+invert = (array) => array.map((el) => -el)
