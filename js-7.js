@@ -34,3 +34,10 @@ const areYouPlayingBanjo = (name) => {
   const plays = name.toLowerCase().startsWith("r") ? "plays" : "does not play"
   return `${name} ${plays} banjo`
 }
+
+//with regular expression
+function areYouPlayingBanjo(name) {
+  return name.match(/^r.+/i)
+    ? `${name} plays banjo`
+    : `${name} does not play banjo`
+}
