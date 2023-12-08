@@ -28,3 +28,9 @@ const areYouPlayingBanjo = (name) =>
   name.startsWith("R") || name.startsWith("r")
     ? `${name} plays banjo`
     : `${name} does not play banjo`
+
+//other
+const areYouPlayingBanjo = (name) => {
+  const plays = name.toLowerCase().startsWith("r") ? "plays" : "does not play"
+  return `${name} ${plays} banjo`
+}
