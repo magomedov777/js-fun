@@ -22,3 +22,9 @@ function areYouPlayingBanjo(name) {
     return name + " does not play banjo"
   }
 }
+
+//with const & ternary
+const areYouPlayingBanjo = (name) =>
+  name.startsWith("R") || name.startsWith("r")
+    ? `${name} plays banjo`
+    : `${name} does not play banjo`
