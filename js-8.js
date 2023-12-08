@@ -65,3 +65,12 @@ function simpleMultiplication(value) {
     return value * 9
   }
 }
+//switch/case
+function simpleMultiplication(number) {
+  switch (true) {
+    case number % 2 == 0:
+      return number * 8
+    default:
+      return number * 9
+  }
+}
