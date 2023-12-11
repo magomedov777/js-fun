@@ -22,3 +22,6 @@ function check(a, x) {
 function check(a, x) {
   return a.indexOf(x) > -1 ? true : false
 }
+
+//with some
+const check = (a, x) => a.some((val) => val === x)
