@@ -32,3 +32,10 @@ const check = Function.prototype.call.bind(Array.prototype.includes)
 const check = (array, value) => !!~array.indexOf(value)
 
 //------------------------------------------
+//new task, string
+//first solution
+fakeBin = (x) =>
+  x
+    .split("")
+    .map((el) => (el < 5 ? 0 : 1))
+    .join("")
