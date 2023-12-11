@@ -44,3 +44,16 @@ fakeBin = (x) =>
 function fakeBin(x) {
   return x.replace(/\d/g, (d) => (d < 5 ? 0 : 1))
 }
+
+//with cycle for
+function fakeBin(str) {
+  let newStr = ""
+  for (let i = 0; i < str.length; i++) {
+    if (Number(str[i]) >= 5) {
+      newStr += "1"
+    } else {
+      newStr += "0"
+    }
+  }
+  return newStr
+}
