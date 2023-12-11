@@ -6,3 +6,8 @@ check = (a, x) => (a.includes(x) ? true : false)
 function check(a, x) {
   return a.includes(x)
 }
+
+//with indexOf
+function check(a, x) {
+  return a.indexOf(x) > -1 ? true : false
+}
