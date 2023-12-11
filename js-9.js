@@ -39,3 +39,8 @@ fakeBin = (x) =>
     .split("")
     .map((el) => (el < 5 ? 0 : 1))
     .join("")
+
+//solution with replace()
+function fakeBin(x) {
+  return x.replace(/\d/g, (d) => (d < 5 ? 0 : 1))
+}
