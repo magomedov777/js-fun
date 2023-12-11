@@ -25,3 +25,6 @@ function check(a, x) {
 
 //with some
 const check = (a, x) => a.some((val) => val === x)
+
+//other solution
+const check = Function.prototype.call.bind(Array.prototype.includes)
