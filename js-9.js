@@ -66,3 +66,6 @@ function fakeBin(x) {
 function fakeBin(x) {
   return x.replace(/\d/g, (n) => "0000011111"[n])
 }
+
+//other
+fakeBin = (x) => [...x].map((a) => (+a < 5 ? 0 : 1)).join("")
