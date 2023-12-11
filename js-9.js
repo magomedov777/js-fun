@@ -69,3 +69,6 @@ function fakeBin(x) {
 
 //other
 fakeBin = (x) => [...x].map((a) => (+a < 5 ? 0 : 1)).join("")
+
+//reduce
+const fakeBin = (x) => [...x].reduce((a, b) => a + ~~(+b / 5), "")
