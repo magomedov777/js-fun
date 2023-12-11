@@ -62,3 +62,7 @@ function fakeBin(str) {
 function fakeBin(x) {
   return x.replace(/[0-4]/g, "0").replace(/[5-9]/g, "1")
 }
+//--------
+function fakeBin(x) {
+  return x.replace(/\d/g, (n) => "0000011111"[n])
+}
