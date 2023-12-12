@@ -35,3 +35,12 @@ function bmi(weight, height) {
 
 //reduce task
 grow = (x) => x.reduce((a, b) => a * b)
+
+//with cycle for
+const grow = (x) => {
+  let res = 1
+  for (let i = 0; i < x.length; i++) {
+    res *= x[i]
+  }
+  return res
+}
