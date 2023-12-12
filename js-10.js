@@ -44,3 +44,12 @@ const grow = (x) => {
   }
   return res
 }
+
+//-------------------------------
+function grow(x) {
+  let counter = x[0]
+  for (let i = 1; i < x.length; i++) {
+    counter = counter * x[i]
+  }
+  return counter
+}
