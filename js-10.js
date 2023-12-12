@@ -119,3 +119,11 @@ DNAtoRNA = (dna) => dna.replace(/T/g, "U")
 function DNAtoRNA(dna) {
   return dna.split("T").join("U")
 }
+
+//smart
+function DNAtoRNA(dna) {
+  return dna.replaceAll("T", "U")
+}
+
+//like map
+DNAtoRNA = ($) => [...$].map((el) => (el === "T" ? (el = "U") : el)).join``
