@@ -61,3 +61,12 @@ function hero(bullets, dragons) {
   //base
   return bullets >= dragons * 2
 }
+
+//if/else
+hero = (bullets, dragons) => {
+  if (bullets / 2 >= dragons) {
+    return true
+  } else {
+    return false
+  }
+}
