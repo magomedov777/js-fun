@@ -110,3 +110,12 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return false
   }
 }
+
+//---------------------------------------
+//conversation task
+DNAtoRNA = (dna) => dna.replace(/T/g, "U")
+
+//with array methods
+function DNAtoRNA(dna) {
+  return dna.split("T").join("U")
+}
