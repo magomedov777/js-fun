@@ -32,3 +32,6 @@ function bmi(weight, height) {
       return "Obese"
   }
 }
+
+//reduce task
+grow = (x) => x.reduce((a, b) => a * b)
