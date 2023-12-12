@@ -92,3 +92,8 @@ function smash(words) {
   }
   return res.trim()
 }
+
+//zero fuel
+//first solution
+const zeroFuel = (distanceToPump, mpg, fuelLeft) =>
+  fuelLeft * mpg >= distanceToPump ? true : false
