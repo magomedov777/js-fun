@@ -83,3 +83,12 @@ function smash(words) {
 }
 
 smash = (words) => words.join(" ")
+
+//for
+function smash(words) {
+  let res = ""
+  for (let i of words) {
+    res += i.concat(" ")
+  }
+  return res.trim()
+}
