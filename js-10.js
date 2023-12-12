@@ -70,3 +70,8 @@ hero = (bullets, dragons) => {
     return false
   }
 }
+
+//like
+function hero(bullets, dragons) {
+  return bullets / dragons >= 2
+}
