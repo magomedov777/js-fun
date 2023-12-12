@@ -75,3 +75,11 @@ hero = (bullets, dragons) => {
 function hero(bullets, dragons) {
   return bullets / dragons >= 2
 }
+
+//--------------------------------------
+//Sentence Smash
+function smash(words) {
+  return words.join(" ")
+}
+
+smash = (words) => words.join(" ")
