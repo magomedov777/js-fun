@@ -56,3 +56,8 @@ function grow(x) {
 
 //new task | hero func
 hero = (bullets, dragons) => (bullets >= dragons * 2 ? true : false)
+
+function hero(bullets, dragons) {
+  //base
+  return bullets >= dragons * 2
+}
