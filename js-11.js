@@ -91,3 +91,13 @@ const min = function (list) {
   list.sort((a, b) => a - b)
   return list[0]
 }
+
+const max = function (list) {
+  list.sort((a, b) => b - a)
+  return list[0]
+}
+
+//with sort
+let minN = (list) => list.sort((a, b) => a - b)[0]
+
+let maxX = (list) => list.sort((a, b) => b - a)[0]
