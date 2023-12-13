@@ -26,3 +26,6 @@ function countBy(x, n) {
 
   return result
 }
+
+//reversed words
+reverseWords = (str) => str.split(" ").reverse().join(" ")
