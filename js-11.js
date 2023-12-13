@@ -39,3 +39,11 @@ function reverseWords(str) {
   }
   return reverse.join(" ")
 }
+
+//step by step | accros variable
+function reverseWords(str) {
+  let spl = str.split(" ")
+  let rvr = spl.reverse()
+  let resArr = rvr.join(" ")
+  return resArr
+}
