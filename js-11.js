@@ -52,3 +52,8 @@ function reverseWords(str) {
 
 //greet func
 greet = (name) => (name === "Johnny" ? "Hello, my love!" : `Hello, ${name}!`)
+
+//base
+function greet(name) {
+  return "Hello, " + (name == "Johnny" ? "my love" : name) + "!"
+}
