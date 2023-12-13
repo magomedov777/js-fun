@@ -80,3 +80,8 @@ countSheep = (n) => [...Array(n).keys()].map((x) => `${x + 1} sheep...`).join``
 //2
 const countSheep = (length) =>
   Array.from({ length }, (_, i) => ++i + " sheep...").join("")
+
+//find min & max values of array
+//first
+min = (list) => Math.min(...list)
+max = (list) => Math.max(...list)
