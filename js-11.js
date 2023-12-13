@@ -47,3 +47,8 @@ function reverseWords(str) {
   let resArr = rvr.join(" ")
   return resArr
 }
+
+//------------------------------------
+
+//greet func
+greet = (name) => (name === "Johnny" ? "Hello, my love!" : `Hello, ${name}!`)
