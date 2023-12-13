@@ -11,3 +11,18 @@ function countBy(x, n) {
 
 //with Array.from()
 const countBy = (x, n) => Array.from({ length: n }, (v, k) => (k + 1) * x)
+
+//with while
+function countBy(x, n) {
+  let result = []
+  let count = 0
+  let num = x
+
+  while (count < n) {
+    result.push(num)
+    num += x
+    count++
+  }
+
+  return result
+}
