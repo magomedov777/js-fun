@@ -62,3 +62,13 @@ function greet(name) {
   if (name === "Johnny") return "Hello, my love!"
   return "Hello, " + name + "!"
 }
+
+//---------------------------------------------
+//new func | count sheep
+function countSheep(num) {
+  let str = ""
+  for (let i = 1; i <= num; i++) {
+    str += i + " sheep..."
+  }
+  return str
+}
