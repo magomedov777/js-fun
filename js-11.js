@@ -72,3 +72,11 @@ function countSheep(num) {
   }
   return str
 }
+
+//smart
+//1
+countSheep = (n) => [...Array(n).keys()].map((x) => `${x + 1} sheep...`).join``
+
+//2
+const countSheep = (length) =>
+  Array.from({ length }, (_, i) => ++i + " sheep...").join("")
