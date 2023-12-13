@@ -8,3 +8,6 @@ function countBy(x, n) {
   }
   return arr
 }
+
+//with Array.from()
+const countBy = (x, n) => Array.from({ length: n }, (v, k) => (k + 1) * x)
