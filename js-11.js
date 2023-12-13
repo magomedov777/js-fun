@@ -85,3 +85,9 @@ const countSheep = (length) =>
 //first
 min = (list) => Math.min(...list)
 max = (list) => Math.max(...list)
+
+//func declaration
+const min = function (list) {
+  list.sort((a, b) => a - b)
+  return list[0]
+}
