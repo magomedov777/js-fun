@@ -132,3 +132,20 @@ function getGrade(s1, s2, s3) {
   let s = (s1 + s2 + s3) / 3
   return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F"
 }
+
+//switch/case
+function getGrade(s1, s2, s3) {
+  let avg = (s1 + s2 + s3) / 3
+  switch (true) {
+    case avg >= 90:
+      return "A"
+    case avg >= 80:
+      return "B"
+    case avg >= 70:
+      return "C"
+    case avg >= 60:
+      return "D"
+    default:
+      return "F"
+  }
+}
