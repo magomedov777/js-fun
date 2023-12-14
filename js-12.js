@@ -126,3 +126,9 @@ function getGrade(s1, s2, s3) {
   if (score >= 60 && score < 70) return "D"
   if (0 <= score < 60) return "F"
 }
+
+//base
+function getGrade(s1, s2, s3) {
+  let s = (s1 + s2 + s3) / 3
+  return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F"
+}
