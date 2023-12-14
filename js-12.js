@@ -62,3 +62,28 @@ const rps = (p1, p2) => {
   const n = RPS_LOOKUP[p1[0] + p2[0]]
   return n ? `Player ${n} won!` : "Draw!"
 }
+
+//with objects
+const rps = (p1, p2) => {
+  console.log(p1, p2)
+  const playing = {
+    scissors: {
+      rock: "Player 2 won!",
+      paper: "Player 1 won!",
+      scissors: "Draw!",
+    },
+    paper: {
+      rock: "Player 1 won!",
+      scissors: "Player 2 won!",
+      paper: "Draw!",
+    },
+    rock: {
+      rock: "Draw!",
+      paper: "Player 2 won!",
+      scissors: "Player 1 won!",
+    },
+  }
+  return playing[p1][p2]
+}
+
+//------------------------------------------------------
