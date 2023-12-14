@@ -44,3 +44,16 @@ const rps = (p1, p2) => {
     /rockscissors|scissorspaper|paperrock/.test(p1 + p2) ? 1 : 2
   } won!`
 }
+
+//good
+const RPS_LOOKUP = {
+  rr: 0,
+  rs: 1,
+  rp: 2,
+  sr: 2,
+  ss: 0,
+  sp: 1,
+  pr: 1,
+  ps: 2,
+  pp: 0,
+}
