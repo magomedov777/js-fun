@@ -87,3 +87,20 @@ const rps = (p1, p2) => {
 }
 
 //------------------------------------------------------
+//points task
+//first
+points = (games) =>
+  games.reduce((a, b) => (a += b[0] > b[2] ? 3 : b[0] < b[2] ? 0 : 1), 0)
+
+//base
+function points(games) {
+  let total = 0
+  games.map((game) => {
+    if (game[0] === game[2]) {
+      total += 1
+    } else if (game[0] > game[2]) {
+      total += 3
+    }
+  })
+  return total
+}
