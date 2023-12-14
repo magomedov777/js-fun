@@ -92,7 +92,7 @@ const rps = (p1, p2) => {
 points = (games) =>
   games.reduce((a, b) => (a += b[0] > b[2] ? 3 : b[0] < b[2] ? 0 : 1), 0)
 
-//base
+//bae
 function points(games) {
   let total = 0
   games.map((game) => {
@@ -104,3 +104,15 @@ function points(games) {
   })
   return total
 }
+
+//with cycle for
+function points(games) {
+  let sum = 0
+  for (let i = 0; i < games.length; ++i) {
+    if (games[i][0] > games[i][2]) sum += 3
+    if (games[i][0] == games[i][2]) sum += 1
+  }
+  return sum
+}
+
+//---------------------------------------
