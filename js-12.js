@@ -34,3 +34,13 @@ const rps = (p1, p2) => {
   else if (p1 == "paper" && p2 == "rock") return "Player 1 won!"
   else return "Player 2 won!"
 }
+
+//smart
+const rps = (p1, p2) => {
+  if (p1 === p2) {
+    return "Draw!"
+  }
+  return `Player ${
+    /rockscissors|scissorspaper|paperrock/.test(p1 + p2) ? 1 : 2
+  } won!`
+}
