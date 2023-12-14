@@ -57,3 +57,8 @@ const RPS_LOOKUP = {
   ps: 2,
   pp: 0,
 }
+
+const rps = (p1, p2) => {
+  const n = RPS_LOOKUP[p1[0] + p2[0]]
+  return n ? `Player ${n} won!` : "Draw!"
+}
