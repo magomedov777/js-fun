@@ -72,3 +72,8 @@ removeExclamationMarks = (s) => s.replace(/!/g, "")
 function removeExclamationMarks(s) {
   return s.split("!").join("")
 }
+
+//with replaceAll
+function removeExclamationMarks(s) {
+  return s.replaceAll("!", "")
+}
