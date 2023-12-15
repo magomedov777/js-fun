@@ -86,3 +86,13 @@ function removeExclamationMarks(s) {
   })
   return arr.join("")
 }
+
+//---------------------------------------------------
+
+//transportation on vacation || fundamentals
+//first
+const rentalCarCost = (d) => {
+  if (d >= 7) return d * 40 - 50
+  if (d >= 3) return d * 40 - 20
+  if (d < 3) return d * 40
+}
