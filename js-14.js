@@ -108,3 +108,6 @@ const quarterOf = (month) => {
   if (month <= 9) return 3
   if (month <= 12) return 4
 }
+
+//short
+const _quarterOf = (m) => Math.ceil(m / 3)
