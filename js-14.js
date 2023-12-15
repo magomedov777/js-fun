@@ -99,3 +99,12 @@ const rentalCarCost = (d) => {
 
 //ternary solution
 rentalCarCost = (d) => d * 40 - (d > 6 ? 50 : d > 2 ? 20 : 0)
+
+//-----------------------------------------------
+//new task | fundamental
+const quarterOf = (month) => {
+  if (month <= 3) return 1
+  if (month <= 6) return 2
+  if (month <= 9) return 3
+  if (month <= 12) return 4
+}
