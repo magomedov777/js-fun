@@ -28,3 +28,23 @@ const _listSquared = (m, n) => {
   }
   return res
 }
+
+//good
+function listSquared(m, n) {
+  let chamber = {}
+  function wuTang(x) {
+    let i = 1,
+      odb = [],
+      meth
+    while (i <= x) {
+      !(x % i) ? (odb.push(i), i++) : i++
+    }
+    meth = odb.reduce(
+      (a, e) =>
+        (chamber[e] ? chamber[e] : ((chamber[e] = e * e), chamber[e])) + a,
+      0
+    )
+    return !(Math.sqrt(meth) % 1) ? [--i, meth] : null
+  }
+  return Array.from({ length: n - m }, (e, i) => wuTang(i + m)).filter((e) => e)
+}
