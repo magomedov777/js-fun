@@ -96,3 +96,6 @@ const rentalCarCost = (d) => {
   if (d >= 3) return d * 40 - 20
   if (d < 3) return d * 40
 }
+
+//ternary solution
+rentalCarCost = (d) => d * 40 - (d > 6 ? 50 : d > 2 ? 20 : 0)
