@@ -50,3 +50,8 @@ const feast = (beast, dish) => {
 function feast(beast, dish) {
   return beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1)
 }
+
+//with at
+function feast(beast, dish) {
+  return beast.at(0) == dish.at(0) && beast.at(-1) == dish.at(-1)
+}
