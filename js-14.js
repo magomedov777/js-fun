@@ -77,3 +77,12 @@ function removeExclamationMarks(s) {
 function removeExclamationMarks(s) {
   return s.replaceAll("!", "")
 }
+
+//good
+function removeExclamationMarks(s) {
+  let arr = s.split("")
+  arr = arr.filter(function (e) {
+    return e !== "!"
+  })
+  return arr.join("")
+}
