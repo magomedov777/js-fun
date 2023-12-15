@@ -48,3 +48,16 @@ function listSquared(m, n) {
   }
   return Array.from({ length: n - m }, (e, i) => wuTang(i + m)).filter((e) => e)
 }
+
+//short
+function listSquared(m, n) {
+  const result = []
+  for (let i = m; i <= n; i++) {
+    let divisorSum = 0
+    for (let d = 1; d <= i; d++) {
+      if (i % d === 0) divisorSum += d * d
+    }
+    if (Number.isInteger(Math.sqrt(divisorSum))) result.push([i, divisorSum])
+  }
+  return result
+}
