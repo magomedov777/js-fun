@@ -18,3 +18,9 @@ const areaOrPerimeter = function (l, w) {
   let perimeter = (l + w) * 2
   return l === w ? area : perimeter
 }
+
+//--------------------------------------
+
+//easy
+//first
+greet = (name, owner) => (name === owner ? "Hello boss" : "Hello guest")
