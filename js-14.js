@@ -61,3 +61,9 @@ function listSquared(m, n) {
   }
   return result
 }
+
+//----------------------------------------------
+
+//new str task
+//first solution
+removeExclamationMarks = (s) => s.replace(/!/g, "")
