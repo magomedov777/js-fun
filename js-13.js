@@ -29,3 +29,11 @@ greet = (name, owner) => (name === owner ? "Hello boss" : "Hello guest")
 function greet(name, owner) {
   return `Hello ${name == owner ? "boss" : "guest"}`
 }
+
+//if/else
+function greet(name, owner) {
+  if (name === owner) {
+    return "Hello boss"
+  }
+  return "Hello guest"
+}
