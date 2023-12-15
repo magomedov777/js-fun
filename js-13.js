@@ -24,3 +24,8 @@ const areaOrPerimeter = function (l, w) {
 //easy
 //first
 greet = (name, owner) => (name === owner ? "Hello boss" : "Hello guest")
+
+//other
+function greet(name, owner) {
+  return `Hello ${name == owner ? "boss" : "guest"}`
+}
