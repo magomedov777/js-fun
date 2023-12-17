@@ -70,3 +70,16 @@ function doubleChar(str) {
 function doubleChar(str) {
   return str.replace(/(.)/g, "$1$1")
 }
+
+//--------------------------------------------
+//new task
+//first
+function bonusTime(salary, bonus) {
+  let res
+  if (bonus) {
+    res = salary * 10
+  } else {
+    res = salary
+  }
+  return `£${res}`
+}
