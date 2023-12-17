@@ -56,3 +56,12 @@ doubleChar = () =>
     .split("")
     .map((el) => el + el)
     .join("")
+
+//with for cycle
+function doubleChar(str) {
+  let word = ""
+  for (let i = 0; i < str.length; i++) {
+    word = word + str[i] + str[i]
+  }
+  return word
+}
