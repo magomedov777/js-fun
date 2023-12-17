@@ -50,3 +50,9 @@ function doubleChar(str) {
     .map((el) => el + el)
     .join("")
 }
+
+doubleChar = () =>
+  str
+    .split("")
+    .map((el) => el + el)
+    .join("")
