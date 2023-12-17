@@ -12,3 +12,8 @@ function take(arr, n) {
 function take(arr, n) {
   return arr.length < n ? arr.slice() : arr.slice(0, n)
 }
+
+//with filter
+function take(arr, n) {
+  return arr.filter((elem, i) => i < n)
+}
