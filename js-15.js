@@ -83,3 +83,8 @@ function bonusTime(salary, bonus) {
   }
   return `£${res}`
 }
+
+//ternary
+function bonusTime(salary, bonus) {
+  return bonus ? `£${10 * salary}` : `£${salary}`
+}
