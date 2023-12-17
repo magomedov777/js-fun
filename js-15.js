@@ -88,3 +88,12 @@ function bonusTime(salary, bonus) {
 function bonusTime(salary, bonus) {
   return bonus ? `£${10 * salary}` : `£${salary}`
 }
+
+//if/else
+function bonusTime(salary, bonus) {
+  if (salary && bonus == true) {
+    return "£" + salary * 10
+  } else {
+    return "£" + salary
+  }
+}
