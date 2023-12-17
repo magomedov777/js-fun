@@ -30,3 +30,14 @@ function take(arr, n) {
   }
   return res
 }
+
+//with cycle while
+function take(arr, n) {
+  let res = []
+  let i = 0
+  while (i < n && i < arr.length) {
+    res.push(arr[i])
+    i++
+  }
+  return res
+}
