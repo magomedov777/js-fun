@@ -45,3 +45,8 @@ function enough(cap, on, wait) {
 //geometry |>
 //first
 otherAngle = (a, b) => 180 - (a + b)
+
+//base
+function otherAngle(a, b) {
+  return 180 - (a + b)
+}
