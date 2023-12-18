@@ -90,3 +90,8 @@ function cockroachSpeed(s) {
 function cockroachSpeed(s) {
   return Math.floor(s * 27.7777777778)
 }
+
+//with ^^
+const cockroachSpeed = (s) => (s / 3.6e-2) ^ 0
+
+//------------------------------------------------
