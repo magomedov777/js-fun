@@ -85,3 +85,8 @@ function cockroachSpeed(s) {
   const centimetersInKilometers = 100000
   return Math.floor((s * centimetersInKilometers) / secsInHour)
 }
+
+//good
+function cockroachSpeed(s) {
+  return Math.floor(s * 27.7777777778)
+}
