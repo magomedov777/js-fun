@@ -106,3 +106,6 @@ function checkForFactor(base, factor) {
 }
 
 const checkForFactor = (base, factor) => base % factor === 0
+
+//smart
+const checkForFactor = (base, factor) => !(base % factor)
