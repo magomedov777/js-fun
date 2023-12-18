@@ -21,3 +21,13 @@ function enough(cap, on, wait) {
     return on + wait - cap
   }
 }
+
+//switch/case | for fun
+function enough(cap, on, wait) {
+  switch (true) {
+    case on + wait - cap > 0:
+      return on + wait - cap
+    default:
+      return 0
+  }
+}
