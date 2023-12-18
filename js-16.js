@@ -50,3 +50,10 @@ otherAngle = (a, b) => 180 - (a + b)
 function otherAngle(a, b) {
   return 180 - (a + b)
 }
+
+//with if/else
+function otherAngle(a, b) {
+  if (a < 0 || b < 0) return 0
+  if (a + b >= 180) return 0
+  return 180 - a - b
+}
