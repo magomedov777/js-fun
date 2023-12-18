@@ -64,3 +64,6 @@ function otherAngle(a, b) {
   let z = 180 - c
   return z
 }
+
+//fun
+let otherAngle = (a = "📐", b = "❓") => ("❗", 180 - a - b)
