@@ -57,3 +57,10 @@ function otherAngle(a, b) {
   if (a + b >= 180) return 0
   return 180 - a - b
 }
+
+//with variable
+function otherAngle(a, b) {
+  let c = a + b
+  let z = 180 - c
+  return z
+}
