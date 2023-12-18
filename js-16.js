@@ -99,3 +99,8 @@ const cockroachSpeed = (s) => (s / 3.6e-2) ^ 0
 //factor check
 //first
 checkForFactor = (base, factor) => ((base / factor) % 1 === 0 ? true : false)
+
+//base
+function checkForFactor(base, factor) {
+  return base % factor === 0
+}
