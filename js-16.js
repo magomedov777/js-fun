@@ -78,3 +78,10 @@ function cockroachSpeed(s) {
 
 //shorts
 const cockroachSpeed = (s) => Math.floor(s / 0.036)
+
+//with variable
+function cockroachSpeed(s) {
+  const secsInHour = 3600
+  const centimetersInKilometers = 100000
+  return Math.floor((s * centimetersInKilometers) / secsInHour)
+}
