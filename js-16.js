@@ -67,3 +67,11 @@ function otherAngle(a, b) {
 
 //fun
 let otherAngle = (a = "📐", b = "❓") => ("❗", 180 - a - b)
+
+//-----------------------------------------------------------
+
+//mathematics
+//first
+function cockroachSpeed(s) {
+  if (s >= 0) return Math.floor((s * 100000) / 3600)
+}
