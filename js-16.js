@@ -75,3 +75,6 @@ let otherAngle = (a = "📐", b = "❓") => ("❗", 180 - a - b)
 function cockroachSpeed(s) {
   if (s >= 0) return Math.floor((s * 100000) / 3600)
 }
+
+//shorts
+const cockroachSpeed = (s) => Math.floor(s / 0.036)
