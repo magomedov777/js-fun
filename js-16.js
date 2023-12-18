@@ -104,3 +104,5 @@ checkForFactor = (base, factor) => ((base / factor) % 1 === 0 ? true : false)
 function checkForFactor(base, factor) {
   return base % factor === 0
 }
+
+const checkForFactor = (base, factor) => base % factor === 0
