@@ -31,3 +31,13 @@ function enough(cap, on, wait) {
       return 0
   }
 }
+
+//with variable
+function enough(cap, on, wait) {
+  let free = cap - on
+  let final = free - wait
+  if (final >= 0) return 0
+  else return Math.abs(final)
+}
+
+//--------------------------------------
