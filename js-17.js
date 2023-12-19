@@ -110,3 +110,8 @@ function strCount(str, letter) {
 function strCount(str, letter) {
   return str.split(letter).length - 1
 }
+
+//like
+function strCount(str, letter) {
+  return str.split("").filter((c) => c == letter).length
+}
