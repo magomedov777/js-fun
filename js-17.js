@@ -81,3 +81,8 @@ function pigIt(str) {
     .map((el) => (/^[a-zA-Z]+$/.test(el) ? el.slice(1) + el[0] + "ay" : el))
     .join(" ")
 }
+
+//short | reg exp
+function pigIt(str) {
+  return str.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3")
+}
