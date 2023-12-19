@@ -62,3 +62,12 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - 2 * sonYearsOld)
 }
+
+//with while cycle
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let count = 0
+  if (dadYearsOld >= sonYearsOld * 2)
+    while (dadYearsOld + count > (sonYearsOld + count) * 2) count++
+  else while (dadYearsOld - count < (sonYearsOld - count) * 2) count++
+  return count
+}
