@@ -57,3 +57,8 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   }
   return sonYearsOld * 2 - dadYearsOld
 }
+
+//best
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld)
+}
