@@ -105,3 +105,8 @@ function strCount(str, letter) {
   }
   return res
 }
+
+//short
+function strCount(str, letter) {
+  return str.split(letter).length - 1
+}
