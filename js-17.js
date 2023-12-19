@@ -115,3 +115,8 @@ function strCount(str, letter) {
 function strCount(str, letter) {
   return str.split("").filter((c) => c == letter).length
 }
+
+//not bad
+function strCount(str, letter) {
+  return (str.match(new RegExp(letter, "g")) || []).length
+}
