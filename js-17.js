@@ -120,3 +120,11 @@ function strCount(str, letter) {
 function strCount(str, letter) {
   return (str.match(new RegExp(letter, "g")) || []).length
 }
+
+//forEach
+function strCount(str, letter) {
+  let count = 0
+  ;[...str].forEach((char) => (char == letter ? count++ : count))
+
+  return count
+}
