@@ -12,3 +12,16 @@ function moveZeros(arr) {
   }
   return withoutZeros.concat(zeros)
 }
+
+//new with func declaration
+const moveZeros = function (arr) {
+  return arr
+    .filter(function (x) {
+      return x !== 0
+    })
+    .concat(
+      arr.filter(function (x) {
+        return x === 0
+      })
+    )
+}
