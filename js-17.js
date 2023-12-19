@@ -41,3 +41,8 @@ const moveZeros = function (arr) {
 const moveZeros = function (arr) {
   return [...arr.filter((n) => n !== 0), ...arr.filter((n) => n === 0)]
 }
+
+//shortest | with sort
+function moveZeros(arr) {
+  return arr.sort((a, b) => (b === 0 ? -1 : 0))
+}
