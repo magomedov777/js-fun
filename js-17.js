@@ -86,3 +86,10 @@ function pigIt(str) {
 function pigIt(str) {
   return str.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3")
 }
+
+//good
+function pigIt(str) {
+  return str.replace(/\w+/g, (match) => match.slice(1) + match.charAt(0) + "ay")
+}
+
+//--------------------------------------------------
