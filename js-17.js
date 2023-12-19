@@ -36,3 +36,8 @@ const moveZeros = function (arr) {
   })
   return filtedList.concat(zeroList)
 }
+
+//smart
+const moveZeros = function (arr) {
+  return [...arr.filter((n) => n !== 0), ...arr.filter((n) => n === 0)]
+}
