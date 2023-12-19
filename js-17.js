@@ -46,3 +46,14 @@ const moveZeros = function (arr) {
 function moveZeros(arr) {
   return arr.sort((a, b) => (b === 0 ? -1 : 0))
 }
+
+//----------------------------------
+
+//new task
+//first
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  if (dadYearsOld >= sonYearsOld * 2) {
+    return dadYearsOld - sonYearsOld * 2
+  }
+  return sonYearsOld * 2 - dadYearsOld
+}
