@@ -25,3 +25,14 @@ const moveZeros = function (arr) {
       })
     )
 }
+
+//good
+const moveZeros = function (arr) {
+  let filtedList = arr.filter(function (num) {
+    return num !== 0
+  })
+  let zeroList = arr.filter(function (num) {
+    return num === 0
+  })
+  return filtedList.concat(zeroList)
+}
