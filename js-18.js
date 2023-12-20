@@ -114,3 +114,6 @@ const correct = (string) => {
   let newStr = string.replace(/5/g, "S").replace(/0/g, "O").replace(/1/g, "I");
   return newStr;
 };
+
+//short
+correct = (s) => s.replace(/0/g, "O").replace(/1/g, "I").replace(/5/g, "S");
