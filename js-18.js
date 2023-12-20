@@ -45,3 +45,7 @@ function switchItUp(number) {
   if (number === 8) return "Eight";
   if (number === 9) return "Nine";
 }
+
+//smart
+switchItUp = (n) =>
+  ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"][n];
