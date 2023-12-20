@@ -21,3 +21,11 @@ class Kata {
     return Array.prototype.slice.call(arguments).reduce((a, b) => a * b);
   }
 }
+
+//fun
+class Kata {
+  static getVolumeOfCuboid(l, w, h) {
+    const mult = l * w * h;
+    return !isNaN(mult) ? mult : "Not-A-Number.";
+  }
+}
