@@ -7,3 +7,10 @@ class Kata {
     return cuboid;
   }
 }
+
+//base
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
