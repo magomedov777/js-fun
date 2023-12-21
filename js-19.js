@@ -44,3 +44,8 @@ function getAge(inputString) {
       return 1;
   }
 }
+
+//good
+function getAge(inputString) {
+  return inputString.match(/[0-9]/)[0] * 1;
+}
