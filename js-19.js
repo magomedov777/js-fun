@@ -16,3 +16,5 @@ function getAge(inputString) {
 function getAge(inputString) {
   return +inputString[0];
 }
+
+getAge = (inputString) => parseInt(inputString[0] + "years old");
