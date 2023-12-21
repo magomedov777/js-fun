@@ -112,3 +112,16 @@ String.prototype.toAlternatingCase = function () {
     .map((a) => (a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase()))
     .join("");
 };
+
+//with cycle for
+String.prototype.toAlternatingCase = function () {
+  new_str = "";
+  for (let i = 0; i < this.length; i++) {
+    if (this[i] === this[i].toUpperCase()) {
+      new_str += this[i].toLowerCase();
+    } else {
+      new_str += this[i].toUpperCase();
+    }
+  }
+  return new_str;
+};
