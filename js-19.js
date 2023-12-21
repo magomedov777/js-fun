@@ -90,3 +90,18 @@ function humanYearsCatYearsDogYears(humanYears) {
       return [humanYears, (humanYears - 2) * 4 + 24, (humanYears - 2) * 5 + 24];
   }
 }
+
+//-------------------------------
+//new task
+//finally
+//first
+String.prototype.toAlternatingCase = function () {
+  let str = "";
+  for (let char of this)
+    if (char === char.toUpperCase()) {
+      str += char.toLowerCase();
+    } else {
+      if (char === char.toLowerCase()) str += char.toUpperCase();
+    }
+  return str;
+};
