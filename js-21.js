@@ -25,3 +25,11 @@ const oddCount = (n) => (n - (n % 2)) / 2;
 function oddCount(n) {
   return Math.trunc(n / 2);
 }
+
+//------------------------------------
+//Sum the strings
+//first
+function sumStr(a, b) {
+  let res = Number(a) + Number(b);
+  return String(res);
+}
