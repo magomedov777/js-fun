@@ -11,3 +11,9 @@ function oddCount(n) {
 function oddCount(n) {
   return parseInt(n / 2);
 }
+
+//across variable
+function oddCount(n) {
+  let odd = Math.round((n - 1) / 2);
+  return odd;
+}
