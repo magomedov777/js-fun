@@ -15,3 +15,8 @@ function isPalindrome(x) {
   }
   return true;
 }
+
+//good
+function isPalindrome(x, str = x.toLowerCase()) {
+  return str === [...str].reverse().join("");
+}
