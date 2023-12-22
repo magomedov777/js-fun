@@ -20,3 +20,8 @@ function oddCount(n) {
 
 //good
 const oddCount = (n) => (n - (n % 2)) / 2;
+
+//other
+function oddCount(n) {
+  return Math.trunc(n / 2);
+}
