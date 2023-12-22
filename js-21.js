@@ -17,3 +17,6 @@ function oddCount(n) {
   let odd = Math.round((n - 1) / 2);
   return odd;
 }
+
+//good
+const oddCount = (n) => (n - (n % 2)) / 2;
