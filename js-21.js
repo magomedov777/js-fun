@@ -55,3 +55,5 @@ function sumStr(a, b) {
 function sumStr(a, b) {
   return ((parseInt(a) || 0) + (parseInt(b) || 0)).toString();
 }
+//2
+const sumStr = (a, b) => 1 * a + 1 * b + "";
