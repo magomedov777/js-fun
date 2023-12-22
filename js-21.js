@@ -49,3 +49,9 @@ function sumStr(a, b) {
   const num2 = Number(b);
   return String(num1 + num2);
 }
+
+//smart
+//1
+function sumStr(a, b) {
+  return ((parseInt(a) || 0) + (parseInt(b) || 0)).toString();
+}
