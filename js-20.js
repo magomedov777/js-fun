@@ -131,3 +131,15 @@ testEven = (n) => (n % 2 === 0 ? true : false);
 function testEven(n) {
   return n % 2 === 0;
 }
+
+//other
+function testEven(n) {
+  if (!Number.isInteger(n)) {
+    return false;
+  }
+  if (Number.isInteger(n / 2)) {
+    return true;
+  } else {
+    return false;
+  }
+}
