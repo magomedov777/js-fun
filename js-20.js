@@ -143,3 +143,8 @@ function testEven(n) {
     return false;
   }
 }
+
+//smart
+function testEven(n) {
+  return !(+n.toString(2).charAt(n.toString(2).length - 1) & 1);
+}
