@@ -96,3 +96,14 @@ function divisibleBy(numbers, divisor) {
   }
   return newArr;
 }
+
+//forEach
+function divisibleBy(numbers, divisor) {
+  const arr = [];
+  numbers.forEach((el) => {
+    if (el % divisor === 0) {
+      arr.push(el);
+    }
+  });
+  return arr;
+}
