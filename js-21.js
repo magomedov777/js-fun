@@ -71,3 +71,8 @@ function sumStr(a, b) {
   }
   return (parseInt(a) + parseInt(b)).toString();
 }
+
+//with reduce
+function sumStr(...strings) {
+  return String(strings.reduce((a, b) => a + (+b || 0), 0));
+}
