@@ -76,3 +76,8 @@ function sumStr(a, b) {
 function sumStr(...strings) {
   return String(strings.reduce((a, b) => a + (+b || 0), 0));
 }
+
+//-----------------------------------------------------
+//new task
+//first
+divisibleBy = (numbers, divisor) => numbers.filter((el) => el % divisor === 0);
