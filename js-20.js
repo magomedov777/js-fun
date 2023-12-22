@@ -20,3 +20,13 @@ function isPalindrome(x) {
 function isPalindrome(x, str = x.toLowerCase()) {
   return str === [...str].reverse().join("");
 }
+
+//with cycle for
+function isPalindrome(x) {
+  x = x.toLowerCase();
+  let y = "";
+  for (let i = x.length - 1; i >= 0; i--) {
+    y += x[i].toLowerCase();
+  }
+  return y == x ? true : false;
+}
