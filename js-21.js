@@ -57,3 +57,17 @@ function sumStr(a, b) {
 }
 //2
 const sumStr = (a, b) => 1 * a + 1 * b + "";
+
+//if/else
+function sumStr(a, b) {
+  if (a === "" && b === "") {
+    return "0";
+  }
+  if (b === "") {
+    return a;
+  }
+  if (a === "") {
+    return b;
+  }
+  return (parseInt(a) + parseInt(b)).toString();
+}
