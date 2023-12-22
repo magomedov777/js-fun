@@ -121,3 +121,8 @@ function greet(language) {
       return "Welcome";
   }
 }
+
+//--------------------------------------------
+//even or no
+//first
+testEven = (n) => (n % 2 === 0 ? true : false);
