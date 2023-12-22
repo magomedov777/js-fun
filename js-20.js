@@ -126,3 +126,8 @@ function greet(language) {
 //even or no
 //first
 testEven = (n) => (n % 2 === 0 ? true : false);
+
+//base
+function testEven(n) {
+  return n % 2 === 0;
+}
