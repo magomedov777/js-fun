@@ -33,3 +33,8 @@ function sumStr(a, b) {
   let res = Number(a) + Number(b);
   return String(res);
 }
+
+//base
+function sumStr(a, b) {
+  return String(Number(a) + Number(b));
+}
