@@ -28,3 +28,12 @@ const powersOfTwo = (n) =>
   Array(n + 1)
     .fill(2)
     .map((e, i) => e ** i);
+
+//do/while | not bad
+function powersOfTwo(n) {
+  let res = [];
+  do {
+    res.unshift(Math.pow(2, n));
+  } while (n--);
+  return res;
+}
