@@ -51,3 +51,6 @@ function between(a, b) {
   }
   return arr;
 }
+
+//good | short
+const between = (a, b) => Array.from(new Array(b - a + 1), (_, i) => a + i);
