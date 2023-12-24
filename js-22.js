@@ -37,3 +37,6 @@ function powersOfTwo(n) {
   } while (n--);
   return res;
 }
+
+//other
+const powersOfTwo = (n) => [1].concat([...Array(n)].map((_, i) => 2 ** (i + 1)));
