@@ -8,3 +8,12 @@ function powersOfTwo(n) {
   }
   return arr;
 }
+
+//base
+function powersOfTwo(n) {
+  let result = [];
+  for (var i = 0; i <= n; i++) {
+    result.push(Math.pow(2, i));
+  }
+  return result;
+}
