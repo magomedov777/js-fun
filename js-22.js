@@ -54,3 +54,11 @@ function between(a, b) {
 
 //good | short
 const between = (a, b) => Array.from(new Array(b - a + 1), (_, i) => a + i);
+
+//for cycle
+function between(a, b) {
+  const min = Math.min(a, b);
+  const max = Math.max(a, b);
+  for (let i = min, arr = []; i <= max; arr.push(i++));
+  return arr;
+}
