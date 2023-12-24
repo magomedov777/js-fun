@@ -40,3 +40,14 @@ function powersOfTwo(n) {
 
 //other
 const powersOfTwo = (n) => [1].concat([...Array(n)].map((_, i) => 2 ** (i + 1)));
+
+//---------------------------------------------------------------------------
+//What is between
+//first
+function between(a, b) {
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
