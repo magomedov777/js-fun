@@ -62,3 +62,13 @@ function between(a, b) {
   for (let i = min, arr = []; i <= max; arr.push(i++));
   return arr;
 }
+
+//cycle while
+function between(a, b) {
+  let c = [];
+  while (a <= b) {
+    c.push(a);
+    a++;
+  }
+  return c;
+}
