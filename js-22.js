@@ -22,3 +22,9 @@ function powersOfTwo(n) {
 function powersOfTwo(n) {
   return Array.from({ length: n + 1 }, (v, k) => 2 ** k);
 }
+
+//best solution
+const powersOfTwo = (n) =>
+  Array(n + 1)
+    .fill(2)
+    .map((e, i) => e ** i);
