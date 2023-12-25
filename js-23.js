@@ -14,6 +14,9 @@ function find_difference([a, b, c], [d, e, f]) {
   return Math.abs(a * b * c - d * e * f);
 }
 
+//2
+find_difference = ([a, b, c], [d, e, f]) => Math.abs(a * b * c - d * e * f);
+
 //other
 find_difference = (a, b) => ((c = (a, b) => a * b), Math.abs(a.reduce(c) - b.reduce(c)));
 
@@ -34,7 +37,6 @@ function findDifference(a, b) {
     num1 = num1 * a[i];
     num2 = num2 * b[i];
   }
-
   if (num1 > num2) {
     return num1 - num2;
   }
