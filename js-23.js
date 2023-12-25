@@ -8,3 +8,8 @@ const findDifference = (a, b) =>
 function find_difference(a, b) {
   return Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
 }
+
+//50/50
+function find_difference([a, b, c], [d, e, f]) {
+  return Math.abs(a * b * c - d * e * f);
+}
