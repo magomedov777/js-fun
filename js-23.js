@@ -16,3 +16,13 @@ function find_difference([a, b, c], [d, e, f]) {
 
 //other
 find_difference = (a, b) => ((c = (a, b) => a * b), Math.abs(a.reduce(c) - b.reduce(c)));
+
+function find_difference(a, b) {
+  a = a.reduce(function (i, ii) {
+    return i * ii;
+  });
+  b = b.reduce(function (j, jj) {
+    return j * jj;
+  });
+  return Math.max(a, b) - Math.min(a, b);
+}
