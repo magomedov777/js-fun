@@ -26,3 +26,17 @@ function find_difference(a, b) {
   });
   return Math.max(a, b) - Math.min(a, b);
 }
+
+function findDifference(a, b) {
+  let num1 = a[0];
+  let num2 = b[0];
+  for (var i = 1; i < 3; i++) {
+    num1 = num1 * a[i];
+    num2 = num2 * b[i];
+  }
+
+  if (num1 > num2) {
+    return num1 - num2;
+  }
+  return num2 - num1;
+}
