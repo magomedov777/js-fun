@@ -40,3 +40,22 @@ function findDifference(a, b) {
   }
   return num2 - num1;
 }
+
+//with cycle for
+function findDifference(a, b) {
+  let res = 0;
+  let a1 = 1;
+  let b1 = 1;
+  for (let i = 0; i < a.length; i++) {
+    a1 *= a[i];
+  }
+  for (let i = 0; i < b.length; i++) {
+    b1 *= b[i];
+  }
+  if (a1 > b1) {
+    res = a1 - b1;
+  } else {
+    res = b1 - a1;
+  }
+  return res;
+}
