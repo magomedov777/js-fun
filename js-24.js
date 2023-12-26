@@ -50,3 +50,6 @@ function howMuchILoveYou(nbPetals) {
   };
   return phrase[nbPetals % 6];
 }
+
+//one line
+const howMuchILoveYou = (n) => ["not at all", "I love you", "a little", "a lot", "passionately", "madly"][n % 6];
