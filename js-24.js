@@ -103,3 +103,13 @@ twoSort = (s) => s.sort()[0].split("").join("***");
 
 //across array
 const twoSort = (s) => [...s.sort()[0]].join("***");
+
+//cycle for
+function twoSort(s) {
+  let last = s.sort()[0];
+  let a = last[0];
+  for (let i = 1; i < last.length; i++) {
+    a += "***" + last[i];
+  }
+  return a;
+}
