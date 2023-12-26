@@ -71,3 +71,10 @@ function howMuchILoveYou(nbPetals) {
       return "I love you";
   }
 }
+
+//while
+function howMuchILoveYou(petals) {
+  const arr = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"];
+  while (petals > 6) petals -= 6;
+  return arr[petals - 1];
+}
