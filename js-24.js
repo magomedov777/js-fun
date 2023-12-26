@@ -95,3 +95,8 @@ function howMuchILoveYou(nbPetals) {
     ? "passionately"
     : "";
 }
+
+//--------------------------------------
+//sort and star
+//first
+twoSort = (s) => s.sort()[0].split("").join("***");
