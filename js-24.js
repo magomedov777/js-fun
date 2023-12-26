@@ -17,3 +17,12 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return [].reduce.call(arguments, (a, b) => a + b);
 }
+
+//other
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  laLigaGoals = parseInt(laLigaGoals);
+  copaDelReyGoals = parseInt(copaDelReyGoals);
+  championsLeagueGoals = parseInt(championsLeagueGoals);
+  let result = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  return result;
+}
