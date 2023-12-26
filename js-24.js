@@ -100,3 +100,6 @@ function howMuchILoveYou(nbPetals) {
 //sort and star
 //first
 twoSort = (s) => s.sort()[0].split("").join("***");
+
+//across array
+const twoSort = (s) => [...s.sort()[0]].join("***");
