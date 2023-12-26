@@ -78,3 +78,20 @@ function howMuchILoveYou(petals) {
   while (petals > 6) petals -= 6;
   return arr[petals - 1];
 }
+
+//good
+function howMuchILoveYou(nbPetals) {
+  return nbPetals % 6 === 1
+    ? "I love you"
+    : nbPetals % 6 === 3
+    ? "a lot"
+    : nbPetals % 6 === 0
+    ? "not at all"
+    : nbPetals % 6 === 2
+    ? "a little"
+    : nbPetals % 6 === 5
+    ? "madly"
+    : nbPetals % 6 === 4
+    ? "passionately"
+    : "";
+}
