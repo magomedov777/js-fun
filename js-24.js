@@ -113,3 +113,10 @@ function twoSort(s) {
   }
   return a;
 }
+
+//reg exp
+function twoSort(q) {
+  let a = q.sort();
+  a = a[0].replace(/(.)(?=.{1,}$)/g, "$1***");
+  return a;
+}
