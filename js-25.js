@@ -13,3 +13,8 @@ function squareOrSquareRoot(array) {
 
 //good
 const squareOrSquareRoot = (array) => array.map((a) => (Math.sqrt(a) % 1 === 0 ? Math.sqrt(a) : a * a));
+
+//other
+function squareOrSquareRoot(array) {
+  return array.map((e) => (Number.isInteger(Math.sqrt(e)) ? Math.sqrt(e) : e * e));
+}
