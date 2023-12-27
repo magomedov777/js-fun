@@ -10,3 +10,6 @@ function squareOrSquareRoot(array) {
     return r % 1 == 0 ? r : x * x;
   });
 }
+
+//good
+const squareOrSquareRoot = (array) => array.map((a) => (Math.sqrt(a) % 1 === 0 ? Math.sqrt(a) : a * a));
