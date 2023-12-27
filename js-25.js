@@ -32,3 +32,15 @@ function squareOrSquareRoot(array) {
   }
   return processed;
 }
+
+function squareOrSquareRoot(array) {
+  let arr = array;
+  for (i = 0; i < array.length; i++) {
+    if (Number.isInteger(Math.sqrt(arr[i]))) {
+      arr[i] = Math.sqrt(arr[i]);
+    } else {
+      arr[i] = arr[i] * arr[i];
+    }
+  }
+  return arr;
+}
