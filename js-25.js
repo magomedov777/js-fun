@@ -54,3 +54,8 @@ function squareOrSquareRoot(array) {
 //Max sum
 //first
 expressionMatter = (a, b, c) => Math.max(a + b + c, a * b * c, a * (b + c), (a + b) * c);
+
+//base
+function expressionMatter(a, b, c) {
+  return Math.max(a + b + c, a * b * c, a * (b + c), (a + b) * c, a + b * c, a * b + c);
+}
