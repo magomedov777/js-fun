@@ -18,3 +18,17 @@ const squareOrSquareRoot = (array) => array.map((a) => (Math.sqrt(a) % 1 === 0 ?
 function squareOrSquareRoot(array) {
   return array.map((e) => (Number.isInteger(Math.sqrt(e)) ? Math.sqrt(e) : e * e));
 }
+
+//cycle for
+function squareOrSquareRoot(array) {
+  let processed = [];
+  for (let i = 0; i < array.length; i++) {
+    let number = array[i];
+    if (Math.sqrt(number) == Math.floor(Math.sqrt(number))) {
+      processed.push(Math.sqrt(number));
+    } else {
+      processed.push(number * number);
+    }
+  }
+  return processed;
+}
