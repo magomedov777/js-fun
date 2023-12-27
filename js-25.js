@@ -59,3 +59,15 @@ expressionMatter = (a, b, c) => Math.max(a + b + c, a * b * c, a * (b + c), (a +
 function expressionMatter(a, b, c) {
   return Math.max(a + b + c, a * b * c, a * (b + c), (a + b) * c, a + b * c, a * b + c);
 }
+
+//interested
+function expressionMatter(a, b, c) {
+  let arr = [];
+  arr.push(a + b + c);
+  arr.push(a * b * c);
+  arr.push(a + b * c);
+  arr.push(a * b + c);
+  arr.push((a + b) * c);
+  arr.push(a * (b + c));
+  return arr.reduce((a, b) => Math.max(a, b));
+}
