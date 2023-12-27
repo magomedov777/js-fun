@@ -49,3 +49,8 @@ function squareOrSquareRoot(array) {
 function squareOrSquareRoot(array) {
   return array.map((val) => (Number.isInteger(Math.sqrt(val)) ? Math.sqrt(val) : Math.pow(val, 2)));
 }
+
+//-------------------------------------------------------
+//Max sum
+//first
+expressionMatter = (a, b, c) => Math.max(a + b + c, a * b * c, a * (b + c), (a + b) * c);
