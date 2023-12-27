@@ -71,3 +71,12 @@ function expressionMatter(a, b, c) {
   arr.push(a * (b + c));
   return arr.reduce((a, b) => Math.max(a, b));
 }
+
+//other
+function expressionMatter(a, b, c) {
+  if (a == 1 && c == 1) return a + b + c;
+  if (a != 1 && b != 1 && c != 1) {
+    return a * b * c;
+  }
+  return a < c ? (a + b) * c : a * (b + c);
+}
