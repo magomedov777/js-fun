@@ -44,3 +44,8 @@ function squareOrSquareRoot(array) {
   }
   return arr;
 }
+
+//good
+function squareOrSquareRoot(array) {
+  return array.map((val) => (Number.isInteger(Math.sqrt(val)) ? Math.sqrt(val) : Math.pow(val, 2)));
+}
