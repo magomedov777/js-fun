@@ -38,3 +38,8 @@ const saleHotdogs = (n) => {
       return n * 90;
   }
 };
+
+//----------------------------------------------------
+//terminal game func
+//first | one line
+move = (position, roll) => position + roll * 2;
