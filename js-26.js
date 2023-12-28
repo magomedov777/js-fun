@@ -74,3 +74,15 @@ function gooseFilter(birds) {
   const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
   return birds.filter((bird) => geese.indexOf(bird) < 0);
 }
+
+//cycle for
+function gooseFilter(birds) {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  let newArray = [];
+  for (let i = 0; i < birds.length; i++) {
+    if (!geese.includes(birds[i])) {
+      newArray.push(birds[i]);
+    }
+  }
+  return newArray;
+}
