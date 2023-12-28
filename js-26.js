@@ -86,3 +86,7 @@ function gooseFilter(birds) {
   }
   return newArray;
 }
+
+//good
+gooseFilter = (b) =>
+  b.filter((e) => !["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"].some((x) => x == e));
