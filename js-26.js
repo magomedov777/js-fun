@@ -49,3 +49,9 @@ move = (position, roll) => position + roll * 2;
 function move(position, roll) {
   return position + roll * 2;
 }
+
+//2
+function move(position, roll) {
+  const newPosition = position + roll * 2;
+  return newPosition;
+}
