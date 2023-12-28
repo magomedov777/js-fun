@@ -60,3 +60,11 @@ function move(position, roll) {
 function move(position, roll) {
   return roll >= 1 && roll <= 6 ? roll * 2 + position : null;
 }
+
+//-------------------------------------------------------
+//birds filter
+//first
+function gooseFilter(birds) {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter((el) => !geese.includes(el));
+}
