@@ -55,3 +55,8 @@ function move(position, roll) {
   const newPosition = position + roll * 2;
   return newPosition;
 }
+
+//ternary
+function move(position, roll) {
+  return roll >= 1 && roll <= 6 ? roll * 2 + position : null;
+}
