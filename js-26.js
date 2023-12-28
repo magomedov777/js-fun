@@ -10,3 +10,16 @@ function saleHotdogs(n) {
 function saleHotdogs(n) {
   return n * (n < 5 ? 100 : n < 10 ? 95 : 90);
 }
+
+//if/else
+function saleHotdogs(n) {
+  let money = 0;
+  if (n < 5) {
+    money = n * 100;
+  } else if (n >= 5 && n < 10) {
+    money = n * 95;
+  } else if (n >= 10) {
+    money = n * 90;
+  }
+  return money;
+}
