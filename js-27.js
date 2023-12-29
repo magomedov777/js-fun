@@ -50,3 +50,8 @@ function square(num) {
 function square(num) {
   return num * num;
 }
+
+//Math.sqrt
+const square = (x) => {
+  return Math.sqrt(x ** 4);
+};
