@@ -40,3 +40,9 @@ square = (x) => x ** 2;
 function square(x) {
   return x ** 2;
 }
+
+//other
+function square(num) {
+  let num = Math.pow(num, 2);
+  return num;
+}
