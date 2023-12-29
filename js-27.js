@@ -19,3 +19,6 @@ function createArray(number) {
 
   return newArray;
 }
+
+//third | smart
+const createArray = (n) => Array(...Array(n)).map((v, i) => i + 1);
