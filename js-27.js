@@ -46,3 +46,7 @@ function square(num) {
   let num = Math.pow(num, 2);
   return num;
 }
+
+function square(num) {
+  return num * num;
+}
