@@ -35,3 +35,8 @@ const createArray = (number) => [...Array(number)].map((_, idx) => ++idx);
 //square
 //first
 square = (x) => x ** 2;
+
+//base
+function square(x) {
+  return x ** 2;
+}
