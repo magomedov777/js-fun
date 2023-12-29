@@ -55,3 +55,12 @@ function square(num) {
 const square = (x) => {
   return Math.sqrt(x ** 4);
 };
+
+//if/else
+function square(n) {
+  if (typeof n === "number") {
+    return n * n;
+  } else {
+    return "undefined";
+  }
+}
