@@ -64,3 +64,6 @@ function square(n) {
     return "undefined";
   }
 }
+
+//new
+let square = (num) => (isFinite(num) ? num * num : 0);
