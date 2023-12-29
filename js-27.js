@@ -83,3 +83,8 @@ String.prototype.isUpperCase = function () {
 String.prototype.isUpperCase = function () {
   return this.toUpperCase() === this.toString();
 };
+
+//reg exp
+String.prototype.isUpperCase = function () {
+  return !/[a-z]/.test(this);
+};
