@@ -67,3 +67,9 @@ function square(n) {
 
 //new
 let square = (num) => (isFinite(num) ? num * num : 0);
+
+//is the string
+//first
+String.prototype.isUpperCase = function () {
+  return this.split("").every((el) => el === el.toUpperCase());
+};
