@@ -43,3 +43,12 @@ const problem = (x) => (typeof x === "string" ? "Error" : x * 50 + 6);
 
 //base
 const _problem = (x) => (Number.isFinite(x) ? x * 50 + 6 : `Error`);
+
+//if/else
+function problem(x) {
+  let sum = x * 50 + 6;
+  if (x > 0 || x < 0 || x === 0) return sum;
+  else {
+    return "Error";
+  }
+}
