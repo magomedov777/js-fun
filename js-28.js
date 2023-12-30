@@ -46,3 +46,6 @@ function stringy(size) {
 function stringy(size) {
   return "10".repeat(Math.floor(size / 2)) + (size % 2 ? "1" : "");
 }
+
+//not bad
+stringy = (s) => `${new Array(~~(s / 2) + 1).join("10")}${s % 2 ? 1 : ""}`;
