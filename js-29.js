@@ -40,3 +40,6 @@ problem = (x) => (x === +x ? x * 50 + 6 : "Error");
 
 //good
 const problem = (x) => (typeof x === "string" ? "Error" : x * 50 + 6);
+
+//base
+const _problem = (x) => (Number.isFinite(x) ? x * 50 + 6 : `Error`);
