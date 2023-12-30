@@ -8,3 +8,6 @@ function unusualFive() {
 
 //very smart
 const unusualFive = () => Math.hypot(Math.ceil(Math.PI), Math.floor(Math.PI));
+
+//good
+const unusualFive = () => "one two three four five".split(" ").length;
