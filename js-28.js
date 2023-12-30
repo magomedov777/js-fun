@@ -30,3 +30,6 @@ function stringy(size) {
   for (let i = 1; i <= size; i++) str += i % 2;
   return str;
 }
+
+//with repeat
+const stringy = (size) => "10".repeat(size).slice(0, size);
