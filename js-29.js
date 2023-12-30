@@ -16,3 +16,8 @@ const unusualFive = () => "one two three four five".split(" ").length;
 function unusualFive() {
   return ~(~(~false ^ ((true << true) << true) ^ ~false) ^ true);
 }
+
+//char code
+function unusualFive() {
+  return "".charCodeAt();
+}
