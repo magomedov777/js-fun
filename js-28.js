@@ -15,3 +15,6 @@ checkAlive = (health) => (health <= 0 ? false : true);
 function checkAlive(health) {
   return health > 0;
 }
+
+//base | ternary
+const checkAlive = (health) => health > 0;
