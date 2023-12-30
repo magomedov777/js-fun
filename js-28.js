@@ -41,3 +41,8 @@ const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
 function stringy(size) {
   return "1".repeat(size).replace(/11/g, "10");
 }
+
+//Math.floor | good
+function stringy(size) {
+  return "10".repeat(Math.floor(size / 2)) + (size % 2 ? "1" : "");
+}
