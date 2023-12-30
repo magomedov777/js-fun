@@ -49,3 +49,13 @@ function stringy(size) {
 
 //not bad
 stringy = (s) => `${new Array(~~(s / 2) + 1).join("10")}${s % 2 ? 1 : ""}`;
+
+//like | while
+function stringy(size) {
+  let result = "";
+  let p = 0;
+  while (size--) {
+    result += p++ % 2 === 0 ? "1" : "0";
+  }
+  return result;
+}
