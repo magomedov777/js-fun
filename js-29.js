@@ -21,3 +21,11 @@ function unusualFive() {
 function unusualFive() {
   return "".charCodeAt();
 }
+
+//like
+function unusualFive() {
+  let string = ["a", "b", "c", "d", "e", "f"];
+  let search = "f";
+  let indexOfFirst = string.indexOf(search);
+  return indexOfFirst;
+}
