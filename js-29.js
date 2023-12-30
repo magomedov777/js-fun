@@ -52,3 +52,9 @@ function problem(x) {
     return "Error";
   }
 }
+
+//other
+function problem(x) {
+  if (isNaN(+x) || x === "") return "Error";
+  return x * 50 + 6;
+}
