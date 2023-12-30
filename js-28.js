@@ -23,3 +23,10 @@ const checkAlive = (health) => health > 0;
 //strings
 //first
 stringy = (size) => ``.padStart(size, 10);
+
+//cycle for
+function stringy(size) {
+  let str = "";
+  for (let i = 1; i <= size; i++) str += i % 2;
+  return str;
+}
