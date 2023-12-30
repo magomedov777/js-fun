@@ -86,3 +86,10 @@ function findMultiples(int, limit) {
     .fill(1)
     .map((x, i) => int * (i + 1));
 }
+
+//step by step
+function findMultiples(integer, limit) {
+  let arr = [...Array(limit + 1).keys()];
+  arr.splice(0, integer);
+  return arr.filter((el) => el % integer === 0);
+}
