@@ -33,3 +33,6 @@ function stringy(size) {
 
 //with repeat
 const stringy = (size) => "10".repeat(size).slice(0, size);
+
+//across arr
+const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
