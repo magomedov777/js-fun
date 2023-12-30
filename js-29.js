@@ -29,3 +29,6 @@ function unusualFive() {
   let indexOfFirst = string.indexOf(search);
   return indexOfFirst;
 }
+
+//new
+const unusualFive = () => Math.sqrt(Math.sqrt("ɱ".charCodeAt()));
