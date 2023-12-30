@@ -10,3 +10,8 @@ function checkAlive(health) {
 }
 
 checkAlive = (health) => (health <= 0 ? false : true);
+
+//base
+function checkAlive(health) {
+  return health > 0;
+}
