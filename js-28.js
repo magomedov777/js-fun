@@ -18,3 +18,8 @@ function checkAlive(health) {
 
 //base | ternary
 const checkAlive = (health) => health > 0;
+
+//-------------------------------------
+//strings
+//first
+stringy = (size) => ``.padStart(size, 10);
