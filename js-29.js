@@ -37,3 +37,6 @@ const unusualFive = () => Math.sqrt(Math.sqrt("ɱ".charCodeAt()));
 //easy task
 //first
 problem = (x) => (x === +x ? x * 50 + 6 : "Error");
+
+//good
+const problem = (x) => (typeof x === "string" ? "Error" : x * 50 + 6);
