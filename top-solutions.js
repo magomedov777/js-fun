@@ -56,3 +56,27 @@ function findMultiples(integer, limit) {
   }
   return arr;
 }
+
+function noBoringZeros(x) {
+  let a = `${x}`.split("");
+  for (let i = a.length - 1; i >= 0; i--) {
+    if (a[i] == 0) {
+      a.pop();
+    } else {
+      break;
+    }
+  }
+  return Number(a.join(""));
+}
+
+noBoringZeros = (n) => +String(n).replace(/0*$/, "");
+
+function unusualFive() {
+  return ~(~(~false ^ ((true << true) << true) ^ ~false) ^ true);
+}
+
+const unusualFive = () => Math.hypot(Math.ceil(Math.PI), Math.floor(Math.PI));
+
+String.prototype.isUpperCase = function () {
+  return this.split("").every((el) => el === el.toUpperCase());
+};
