@@ -80,3 +80,14 @@ const unusualFive = () => Math.hypot(Math.ceil(Math.PI), Math.floor(Math.PI));
 String.prototype.isUpperCase = function () {
   return this.split("").every((el) => el === el.toUpperCase());
 };
+
+const findDifference = (a, b) =>
+  Math.abs(a.reduce((prev, curr) => prev * curr) - b.reduce((prev, curr) => prev * curr));
+
+function powersOfTwo(n) {
+  let arr = [];
+  for (let i = 0; i <= n; i++) {
+    arr.push(2 ** i);
+  }
+  return arr;
+}
