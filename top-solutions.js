@@ -10,7 +10,9 @@ function longestSlideDown(pyramid) {
 function longestSlideDown(pyramid) {
   pyramid = pyramid.slice(0);
   let i = pyramid.length - 1;
-  while (i--) for (let j = 0; j <= i; ++j) pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1]);
+  while (i--)
+    for (let j = 0; j <= i; ++j)
+      pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1]);
   return pyramid[0][0];
 }
 
@@ -31,7 +33,8 @@ function longestSlideDown(pyramid) {
   return pyramid[pyramid.length - 1].sort((a, b) => b - a)[0];
 }
 
-sumStrings = (x, y) => (isNaN(parseInt(x)) ? y : isNaN(parseInt(y)) ? x : String(BigInt(x) + BigInt(y)));
+sumStrings = (x, y) =>
+  isNaN(parseInt(x)) ? y : isNaN(parseInt(y)) ? x : String(BigInt(x) + BigInt(y));
 
 function sumStrings(a, b) {
   var res = "",
@@ -105,3 +108,36 @@ String.prototype.toAlternatingCase = function () {
   }
   return new_str;
 };
+
+addLength = (str) => str.split(" ").map((el) => String(el + " " + el.length));
+
+function addLength(str) {
+  return str.split(" ").map((s) => `${s} ${s.length}`);
+}
+
+function tripleTrouble(one, two, three) {
+  let res = [];
+  for (let i = 0; i < one.length; i++) {
+    res.push(one[i], two[i], three[i]);
+  }
+  return res.join("");
+}
+
+const tripleTrouble = (one, two, three) =>
+  one
+    .split("")
+    .map((letter, index) => letter + two[index] + three[index])
+    .join("");
+
+function mergeArrays(arr1, arr2) {
+  let newArray = [];
+  newArray = newArray.concat(arr1);
+  for (let i = 0; i < arr2.length; i++) {
+    if (newArray.indexOf(arr2[i]) === -1) {
+      newArray.push(arr2[i]);
+    }
+  }
+  return newArray.sort(function (a, b) {
+    return a - b;
+  });
+}
