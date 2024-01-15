@@ -141,3 +141,45 @@ function mergeArrays(arr1, arr2) {
     return a - b;
   });
 }
+
+function generateRange(min, max, step) {
+  let arr = [];
+  for (let i = min; i <= max; i += step) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+function generateRange(min, max, step) {
+  let arr = [];
+  while (min <= max) {
+    arr.push(min);
+    min += step;
+  }
+  return arr;
+}
+
+function replace(s) {
+  let a = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  let arr = s.split("");
+  for (let i = 0; i < arr.length; i++) {
+    if (a.includes(arr[i])) {
+      arr[i] = "!";
+    }
+  }
+  return arr.join("");
+}
+
+replace = (s) => s.replace(/[aeiouAEIOU]/g, "!");
+
+function replace(s) {
+  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  for (let i = 0; i < s.length; i++) {
+    for (let j = 0; j < vowels.length; j++) {
+      if (s[i] == vowels[j]) {
+        s = s.replaceAll(vowels[j], "!");
+      }
+    }
+  }
+  return s;
+}
