@@ -10,9 +10,7 @@ function longestSlideDown(pyramid) {
 function longestSlideDown(pyramid) {
   pyramid = pyramid.slice(0);
   let i = pyramid.length - 1;
-  while (i--)
-    for (let j = 0; j <= i; ++j)
-      pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1]);
+  while (i--) for (let j = 0; j <= i; ++j) pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1]);
   return pyramid[0][0];
 }
 
@@ -33,8 +31,7 @@ function longestSlideDown(pyramid) {
   return pyramid[pyramid.length - 1].sort((a, b) => b - a)[0];
 }
 
-sumStrings = (x, y) =>
-  isNaN(parseInt(x)) ? y : isNaN(parseInt(y)) ? x : String(BigInt(x) + BigInt(y));
+sumStrings = (x, y) => (isNaN(parseInt(x)) ? y : isNaN(parseInt(y)) ? x : String(BigInt(x) + BigInt(y)));
 
 function sumStrings(a, b) {
   var res = "",
@@ -182,4 +179,37 @@ function replace(s) {
     }
   }
   return s;
+}
+
+function arrayMadness(a, b) {
+  return a.reduce((sum, el) => sum + el ** 2, 0) > b.reduce((sum, el) => sum + el ** 3, 0);
+}
+
+function arrayMadness(a, b) {
+  let x = a.reduce((acc, curr) => acc + Math.pow(curr, 2), 0);
+  let y = b.reduce((acc, curr) => acc + Math.pow(curr, 3), 0);
+  if (x > y) {
+    return true;
+  }
+  return false;
+}
+
+findAverage = (nums) => nums.reduce((acc, curr) => acc + curr, 0) / nums.length;
+
+const findAverage = function (nums) {
+  let sum = 0;
+  for (n in nums) {
+    sum += nums[n];
+  }
+  return sum / nums.length;
+};
+
+function findAverage(nums) {
+  let sum = 0;
+  let index = 0;
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+    index++;
+  }
+  return index >= 1 ? sum / index : sum;
 }
