@@ -213,3 +213,19 @@ function findAverage(nums) {
   }
   return index >= 1 ? sum / index : sum;
 }
+
+const _add = (n) => Object.assign((i) => add(i + n), { valueOf: () => n });
+
+include = (arr, item) => (arr.includes(item) ? true : false);
+
+function stringClean(s) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    if (isNaN(s[i]) || s[i] == " ") result += s[i];
+  }
+  return result;
+}
+
+const derive = (coef, exp) => `${coef * exp}x^${exp - 1}`;
+
+flip = (d, a) => (d === "R" ? a.sort((a, b) => a - b) : a.sort((a, b) => b - a));
