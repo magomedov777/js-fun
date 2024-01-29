@@ -229,3 +229,17 @@ function stringClean(s) {
 const derive = (coef, exp) => `${coef * exp}x^${exp - 1}`;
 
 flip = (d, a) => (d === "R" ? a.sort((a, b) => a - b) : a.sort((a, b) => b - a));
+
+function tripleTrouble(one, two, three) {
+  let res = [];
+  for (let i = 0; i < one.length; i++) {
+    res.push(one[i], two[i], three[i]);
+  }
+  return res.join("");
+}
+
+const tripleTrouble = (one, two, three) =>
+  one
+    .split("")
+    .map((letter, index) => letter + two[index] + three[index])
+    .join("");
