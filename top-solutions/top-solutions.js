@@ -243,3 +243,19 @@ const tripleTrouble = (one, two, three) =>
     .split("")
     .map((letter, index) => letter + two[index] + three[index])
     .join("");
+
+function mergeArrays(arr1, arr2) {
+  if (arr1.length == 0 && arr2.length == 0) {
+    return [];
+  }
+  for (let i = 0; i < arr2.length; i++) {
+    if (!arr1.includes(arr2[i])) {
+      arr1.push(arr2[i]);
+    }
+  }
+  return arr1.sort((a, b) => a - b);
+}
+
+function noBoringZeros(n) {
+  return +`${n}`.replace(/0*$/, "");
+}
