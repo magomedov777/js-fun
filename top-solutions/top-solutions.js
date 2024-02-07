@@ -259,3 +259,31 @@ function mergeArrays(arr1, arr2) {
 function noBoringZeros(n) {
   return +`${n}`.replace(/0*$/, "");
 }
+
+function remove(s) {
+  return s.replace(/!/g, "").concat("!");
+}
+
+pillars = (numPill, dist, width) => (numPill > 1 ? (numPill - 2) * width + (numPill - 1) * dist * 100 : 0);
+
+pillars = (n, d, w) => Math.max(0, n - 1) * (d * 100) + Math.max(0, n - 2) * w;
+
+function differenceInAges(ages) {
+  let youngest = ages[0];
+  let oldest = ages[0];
+  for (i = 0; i < ages.length; i++) {
+    if (ages[i] > oldest) {
+      oldest = ages[i];
+    } else if (ages[i] < youngest) {
+      youngest = ages[i];
+    }
+  }
+  return [youngest, oldest, oldest - youngest];
+}
+
+function differenceInAges(ages) {
+  let min = Math.min.apply(null, ages);
+  let max = Math.max.apply(null, ages);
+  let diff = max - min;
+  return [min, max, diff];
+}
