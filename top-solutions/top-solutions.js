@@ -287,3 +287,35 @@ function differenceInAges(ages) {
   let diff = max - min;
   return [min, max, diff];
 }
+
+function lowercaseCount(str) {
+  return str.split("").filter((el) => /[a-z]/.test(el)).length;
+}
+
+lowercaseCount = (str) => str.match(/[a-z]/g || []).length;
+
+function lowercaseCount(str) {
+  let arr = str.split("");
+  let res = arr.filter((el) => el.toLowerCase());
+  let x = res.filter((el) => el.toLowerCase() && el !== el.toUpperCase()).length;
+  return x;
+}
+
+const days = ["", 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const howManydays = (n) => {
+  switch (n) {
+    case n:
+      return days[n];
+  }
+};
+
+function squareArea(A) {
+  return Math.round(Math.pow((A * 2) / Math.PI, 2) * 100) / 100;
+}
+
+function highAndLow(numbers) {
+  let x = numbers.split(" ");
+  let maxVal = Math.max(...x);
+  let minVal = Math.min(...x);
+  return `${maxVal} ${minVal}`;
+}
