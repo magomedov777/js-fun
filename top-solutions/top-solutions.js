@@ -319,3 +319,14 @@ function highAndLow(numbers) {
   let minVal = Math.min(...x);
   return `${maxVal} ${minVal}`;
 }
+
+const nextId = (ids) =>
+  ((val) => (val < 0 ? Math.max(...ids) + 1 : val))(ids.findIndex((_, idx) => !ids.includes(idx)));
+
+function combineNames() {
+  return Array.prototype.join.call(arguments, " ");
+}
+
+function nextId(ids) {
+  return ids.sort((a, b) => a - b).reduce((prev, curr) => prev + (prev === curr), 0);
+}
