@@ -330,3 +330,15 @@ function combineNames() {
 function nextId(ids) {
   return ids.sort((a, b) => a - b).reduce((prev, curr) => prev + (prev === curr), 0);
 }
+
+function odds(values) {
+  let result = [];
+  for (let i = 0; i < values.length; i++) {
+    if (values[i] % 2 !== 0) {
+      result.push(values[i]);
+    }
+  }
+  return result;
+}
+
+odds = (val) => val.filter((el) => el % 2 === 1);
