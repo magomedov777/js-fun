@@ -356,3 +356,28 @@ function multiply(number) {
 }
 
 numberToPower = (number, power) => (power > 0 ? number * numberToPower(number, power - 1) : 1);
+
+function numberToPower(number, power) {
+  let result = 1;
+  for (let i = 0; i < power; ++i) result *= number;
+  return result;
+}
+
+function numberToPower(number, power) {
+  return Array(power)
+    .fill(number)
+    .reduce((res, n) => res * n, 1);
+}
+
+String.prototype.digit = function () {
+  return /^\d$/.test(this);
+};
+
+function uniTotal(string) {
+  return string
+    .split("")
+    .map((el) => el.charCodeAt(0))
+    .reduce((a, b) => a + b, 0);
+}
+
+uniTotal = (str) => [...str].reduce((acc, char) => acc + char.charCodeAt(0), 0);
