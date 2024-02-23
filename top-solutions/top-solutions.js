@@ -342,3 +342,17 @@ function odds(values) {
 }
 
 odds = (val) => val.filter((el) => el % 2 === 1);
+
+function getASCII(chars) {
+  return [...chars].map((char) => char.charCodeAt()).reduce((curr, prev) => prev + curr);
+}
+
+validateCode = (code) => /^[123]/g.test(code);
+
+multiply = (number) => number * 5 ** String(Math.abs(number)).length;
+
+function multiply(number) {
+  return number * Math.pow(5, Math.abs(number).toString().length);
+}
+
+numberToPower = (number, power) => (power > 0 ? number * numberToPower(number, power - 1) : 1);
