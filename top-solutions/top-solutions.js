@@ -503,3 +503,21 @@ function flickSwitch(arr) {
   }
   return result
 }
+
+function flickSwitch(arr) {
+  let returning = true
+  return arr.map((v) => {
+    return v === 'flick' ? (returning = !returning) : returning
+  })
+}
+
+function flickSwitch(arr) {
+  let flag = true
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == 'flick') {
+      flag == false ? (flag = true) : (flag = false)
+    }
+    arr[i] = flag
+  }
+  return arr
+}
