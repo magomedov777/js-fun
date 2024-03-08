@@ -523,3 +523,7 @@ function flickSwitch(arr) {
 }
 
 orderOperations = (a) => (2 << 2) << 2
+
+orderOperations = () => '+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*'.length
+
+orderOperations = () => (2 + 2 * 2 + 2) ** 2 / 2
