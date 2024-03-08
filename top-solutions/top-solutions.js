@@ -521,3 +521,5 @@ function flickSwitch(arr) {
   }
   return arr
 }
+
+orderOperations = (a) => (2 << 2) << 2
