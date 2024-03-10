@@ -527,3 +527,18 @@ orderOperations = (a) => (2 << 2) << 2
 orderOperations = () => '+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*'.length
 
 orderOperations = () => (2 + 2 * 2 + 2) ** 2 / 2
+
+function grabDoll(dolls) {
+  let bag = []
+  for (let i = 0; i < dolls.length; i++) {
+    if (dolls[i] === 'Hello Kitty' || dolls[i] === 'Barbie doll') {
+      bag.push(dolls[i])
+    } else {
+      continue
+    }
+    if (bag.length === 3) break
+  }
+  return bag
+}
+
+typeValidation = (variable, type) => typeof variable === type
