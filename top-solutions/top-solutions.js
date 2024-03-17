@@ -542,3 +542,41 @@ function grabDoll(dolls) {
 }
 
 typeValidation = (variable, type) => typeof variable === type
+
+function match(candidate, job) {
+  if (!job.maxSalary || !candidate.minSalary) throw 'Error!'
+  return job.maxSalary >= candidate.minSalary * 0.9
+}
+
+function sorter(textbooks) {
+  return textbooks.sort((a, b) =>
+    a.toLowerCase() > b.toLowerCase()
+      ? 1
+      : a.toLowerCase() < b.toLowerCase()
+      ? -1
+      : 0
+  )
+}
+
+function sorter(textbooks) {
+  let item = textbooks[0]
+  for (let i = 0; i < textbooks.length - 1; i++) {
+    for (let j = i + 1; j < textbooks.length; j++) {
+      if (textbooks[i].toLowerCase() > textbooks[j].toLowerCase()) {
+        item = textbooks[i]
+        textbooks[i] = textbooks[j]
+        textbooks[j] = item
+      }
+    }
+  }
+  return textbooks
+}
+
+function generateLink(user) {
+  const baseURL = 'http://www.codewars.com/users/'
+  return `${baseURL}${encodeURIComponent(user)}`
+}
+
+function generateLink(user) {
+  return `http://www.codewars.com/users/${encodeURIComponent(user)}`
+}
