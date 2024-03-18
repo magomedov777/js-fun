@@ -580,3 +580,16 @@ function generateLink(user) {
 function generateLink(user) {
   return `http://www.codewars.com/users/${encodeURIComponent(user)}`
 }
+
+none = (arr, fun) => arr.filter((a) => fun(a)).length == 0
+
+function none(arr, fun) {
+  for (let i = 0; i < arr.length; i++) {
+    if (fun(arr[i]) == true) {
+      return false
+    }
+  }
+  return true
+}
+
+none = (arr, fun) => !arr.some(fun)
