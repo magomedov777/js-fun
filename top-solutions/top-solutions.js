@@ -593,3 +593,32 @@ function none(arr, fun) {
 }
 
 none = (arr, fun) => !arr.some(fun)
+
+function eachCons(array, n) {
+  let res = []
+  for (let i = 0; i < array.length; i++) {
+    res.push(array.slice(i, i + n))
+  }
+  return res.filter((el) => el.length === n)
+}
+
+eachCons = (l, n) =>
+  [...Array(Math.max(0, l.length - n + 1)).keys()].map((i) => l.slice(i, i + n))
+
+eachCons = (arr, n) => {
+  let result = []
+  for (let i = 0; i <= arr.length - n; i++) {
+    let temp = []
+    for (let j = 0; j < n; j++) {
+      temp.push(arr[i + j])
+    }
+    result.push(temp)
+  }
+  return result
+}
+
+function eachCons(array, n) {
+  return array
+    .map((x, y) => array.slice(y, y + n))
+    .filter((x) => x.length === n)
+}
