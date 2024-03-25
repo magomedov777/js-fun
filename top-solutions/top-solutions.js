@@ -622,3 +622,15 @@ function eachCons(array, n) {
     .map((x, y) => array.slice(y, y + n))
     .filter((x) => x.length === n)
 }
+
+amIWilson = (p) => [5, 13, 563].indexOf(p) > -1
+
+amIWilson = (p) => [5, 13, 563].includes(p)
+
+const amIWilson = (num) => ((factorial(num - 1) + 1) / (num * num)) % 1 === 0
+
+const factorial = (x) => (x <= 1 ? 1 : x * factorial(x - 1))
+
+function amIWilson(p) {
+  return p === 5 || p === 13 || p === 563 ? true : false
+}
