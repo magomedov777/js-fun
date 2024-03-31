@@ -700,3 +700,36 @@ function pointsPer48(ppg, mpg) {
 
 let pointsPer48 = (ppg, mpg) =>
   mpg == 0 ? 0 : Math.round((ppg / mpg) * 48 * 10) / 10
+
+collinearity = (x1, y1, x2, y2) => x1 * y2 === y1 * x2
+
+collinearity = (x1, y1, x2, y2) =>
+  (x1 == 0 && y1 == 0) ||
+  (x2 == 0 && y2 == 0) ||
+  (x1 == 0 && x2 == 0) ||
+  (y1 == 0 && y2 == 0)
+    ? true
+    : x1 / x2 == y1 / y2
+    ? true
+    : false
+
+periodIsLate = (last, today, cycleLength) =>
+  (today.getTime() - last.getTime()) / 86400000 > cycleLength
+
+function periodIsLate(last, today, cycleLength) {
+  return (today - last) / 86400000 > cycleLength
+}
+
+function periodIsLate(last, today, cycleLength) {
+  return (
+    Math.abs(last.getTime() - today.getTime()) / (1000 * 60 * 60 * 24) >
+    cycleLength
+  )
+}
+
+const nextItem = (xs, item) => {
+  const iter = xs[Symbol.iterator]()
+  for (let el of iter) {
+    if (el === item) return iter.next().value
+  }
+}
