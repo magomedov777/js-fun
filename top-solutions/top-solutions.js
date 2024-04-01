@@ -648,21 +648,6 @@ function sum(n, m = n) {
   return comp
 }
 
-function sum(num) {
-  const memo = {}
-  function sumRecursive(target, max) {
-    let partitions = 0
-    for (let i = Math.min(target, max); i > 0; i--) {
-      if (i === target || i === 1) partitions++
-      else
-        partitions += memo[`${target - i}-${i}`] || sumRecursive(target - i, i)
-    }
-    memo[`${target}-${max}`] = partitions
-    return partitions
-  }
-  return sumRecursive(num, num)
-}
-
 function sum(n) {
   this.mem = this.mem || [1]
   if (n < 0) return 0
@@ -756,4 +741,21 @@ function sum(num) {
     return partitions
   }
   return sumRecursive(num, num)
+}
+
+function mergeArrays(arr1, arr2) {
+  let newArray = []
+  newArray = newArray.concat(arr1)
+  for (let i = 0; i < arr2.length; i++) {
+    if (newArray.indexOf(arr2[i]) === -1) {
+      newArray.push(arr2[i])
+    }
+  }
+  return newArray.sort(function (a, b) {
+    return a - b
+  })
+}
+
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2).sort((a, b) => a - b)))
 }
