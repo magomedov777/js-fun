@@ -11,8 +11,7 @@ function longestSlideDown(pyramid) {
   pyramid = pyramid.slice(0)
   let i = pyramid.length - 1
   while (i--)
-    for (let j = 0; j <= i; ++j)
-      pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1])
+    for (let j = 0; j <= i; ++j) pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1])
   return pyramid[0][0]
 }
 
@@ -34,11 +33,7 @@ function longestSlideDown(pyramid) {
 }
 
 sumStrings = (x, y) =>
-  isNaN(parseInt(x))
-    ? y
-    : isNaN(parseInt(y))
-    ? x
-    : String(BigInt(x) + BigInt(y))
+  isNaN(parseInt(x)) ? y : isNaN(parseInt(y)) ? x : String(BigInt(x) + BigInt(y))
 
 function sumStrings(a, b) {
   var res = '',
@@ -89,10 +84,7 @@ String.prototype.isUpperCase = function () {
 }
 
 const findDifference = (a, b) =>
-  Math.abs(
-    a.reduce((prev, curr) => prev * curr) -
-      b.reduce((prev, curr) => prev * curr)
-  )
+  Math.abs(a.reduce((prev, curr) => prev * curr) - b.reduce((prev, curr) => prev * curr))
 
 function powersOfTwo(n) {
   let arr = []
@@ -192,10 +184,7 @@ function replace(s) {
 }
 
 function arrayMadness(a, b) {
-  return (
-    a.reduce((sum, el) => sum + el ** 2, 0) >
-    b.reduce((sum, el) => sum + el ** 3, 0)
-  )
+  return a.reduce((sum, el) => sum + el ** 2, 0) > b.reduce((sum, el) => sum + el ** 3, 0)
 }
 
 function arrayMadness(a, b) {
@@ -335,18 +324,14 @@ function highAndLow(numbers) {
 }
 
 const nextId = (ids) =>
-  ((val) => (val < 0 ? Math.max(...ids) + 1 : val))(
-    ids.findIndex((_, idx) => !ids.includes(idx))
-  )
+  ((val) => (val < 0 ? Math.max(...ids) + 1 : val))(ids.findIndex((_, idx) => !ids.includes(idx)))
 
 function combineNames() {
   return Array.prototype.join.call(arguments, ' ')
 }
 
 function nextId(ids) {
-  return ids
-    .sort((a, b) => a - b)
-    .reduce((prev, curr) => prev + (prev === curr), 0)
+  return ids.sort((a, b) => a - b).reduce((prev, curr) => prev + (prev === curr), 0)
 }
 
 function odds(values) {
@@ -362,9 +347,7 @@ function odds(values) {
 odds = (val) => val.filter((el) => el % 2 === 1)
 
 function getASCII(chars) {
-  return [...chars]
-    .map((char) => char.charCodeAt())
-    .reduce((curr, prev) => prev + curr)
+  return [...chars].map((char) => char.charCodeAt()).reduce((curr, prev) => prev + curr)
 }
 
 validateCode = (code) => /^[123]/g.test(code)
@@ -375,8 +358,7 @@ function multiply(number) {
   return number * Math.pow(5, Math.abs(number).toString().length)
 }
 
-numberToPower = (number, power) =>
-  power > 0 ? number * numberToPower(number, power - 1) : 1
+numberToPower = (number, power) => (power > 0 ? number * numberToPower(number, power - 1) : 1)
 
 function numberToPower(number, power) {
   let result = 1
@@ -415,9 +397,7 @@ cannonsReady = (gunners) =>
   Object.values(gunners).includes('nay') ? 'Shiver me timbers!' : 'Fire!'
 
 cannonsReady = (gunners) => {
-  return Object.values(gunners).some((m) => m === 'nay')
-    ? 'Shiver me timbers!'
-    : 'Fire!'
+  return Object.values(gunners).some((m) => m === 'nay') ? 'Shiver me timbers!' : 'Fire!'
 }
 
 let cannonsReady = (gunners) => {
@@ -550,11 +530,7 @@ function match(candidate, job) {
 
 function sorter(textbooks) {
   return textbooks.sort((a, b) =>
-    a.toLowerCase() > b.toLowerCase()
-      ? 1
-      : a.toLowerCase() < b.toLowerCase()
-      ? -1
-      : 0
+    a.toLowerCase() > b.toLowerCase() ? 1 : a.toLowerCase() < b.toLowerCase() ? -1 : 0
   )
 }
 
@@ -602,8 +578,7 @@ function eachCons(array, n) {
   return res.filter((el) => el.length === n)
 }
 
-eachCons = (l, n) =>
-  [...Array(Math.max(0, l.length - n + 1)).keys()].map((i) => l.slice(i, i + n))
+eachCons = (l, n) => [...Array(Math.max(0, l.length - n + 1)).keys()].map((i) => l.slice(i, i + n))
 
 eachCons = (arr, n) => {
   let result = []
@@ -618,9 +593,7 @@ eachCons = (arr, n) => {
 }
 
 function eachCons(array, n) {
-  return array
-    .map((x, y) => array.slice(y, y + n))
-    .filter((x) => x.length === n)
+  return array.map((x, y) => array.slice(y, y + n)).filter((x) => x.length === n)
 }
 
 amIWilson = (p) => [5, 13, 563].indexOf(p) > -1
@@ -655,8 +628,7 @@ function sum(n) {
   this.mem[n] = 0
   for (let i = 1; i <= n; i++)
     this.mem[n] +=
-      (i % 2 ? 1 : -1) *
-      (sum(n - (i * (3 * i - 1)) / 2) + sum(n - (i * (3 * i + 1)) / 2))
+      (i % 2 ? 1 : -1) * (sum(n - (i * (3 * i - 1)) / 2) + sum(n - (i * (3 * i + 1)) / 2))
   return this.mem[n]
 }
 
@@ -670,8 +642,7 @@ const _sum = (num) => {
   return dp[num]
 }
 
-let pointsPer48 = (ppg, mpg) =>
-  ppg === 0 && mpg === 0 ? 0 : +((ppg / mpg) * 48).toFixed(1)
+let pointsPer48 = (ppg, mpg) => (ppg === 0 && mpg === 0 ? 0 : +((ppg / mpg) * 48).toFixed(1))
 
 function pointsPer48(ppg, mpg) {
   return +((ppg / mpg) * 48).toFixed(1) || 0
@@ -683,16 +654,12 @@ function pointsPer48(ppg, mpg) {
   return mpg ? Number((ppg * (48 / mpg)).toFixed(1)) : 0
 }
 
-let pointsPer48 = (ppg, mpg) =>
-  mpg == 0 ? 0 : Math.round((ppg / mpg) * 48 * 10) / 10
+let pointsPer48 = (ppg, mpg) => (mpg == 0 ? 0 : Math.round((ppg / mpg) * 48 * 10) / 10)
 
 collinearity = (x1, y1, x2, y2) => x1 * y2 === y1 * x2
 
 collinearity = (x1, y1, x2, y2) =>
-  (x1 == 0 && y1 == 0) ||
-  (x2 == 0 && y2 == 0) ||
-  (x1 == 0 && x2 == 0) ||
-  (y1 == 0 && y2 == 0)
+  (x1 == 0 && y1 == 0) || (x2 == 0 && y2 == 0) || (x1 == 0 && x2 == 0) || (y1 == 0 && y2 == 0)
     ? true
     : x1 / x2 == y1 / y2
     ? true
@@ -706,10 +673,7 @@ function periodIsLate(last, today, cycleLength) {
 }
 
 function periodIsLate(last, today, cycleLength) {
-  return (
-    Math.abs(last.getTime() - today.getTime()) / (1000 * 60 * 60 * 24) >
-    cycleLength
-  )
+  return Math.abs(last.getTime() - today.getTime()) / (1000 * 60 * 60 * 24) > cycleLength
 }
 
 const nextItem = (xs, item) => {
@@ -734,8 +698,7 @@ function sum(num) {
     let partitions = 0
     for (let i = Math.min(target, max); i > 0; i--) {
       if (i === target || i === 1) partitions++
-      else
-        partitions += memo[`${target - i}-${i}`] || sumRecursive(target - i, i)
+      else partitions += memo[`${target - i}-${i}`] || sumRecursive(target - i, i)
     }
     memo[`${target}-${max}`] = partitions
     return partitions
@@ -758,4 +721,21 @@ function mergeArrays(arr1, arr2) {
 
 function mergeArrays(arr1, arr2) {
   return Array.from(new Set(arr1.concat(arr2).sort((a, b) => a - b)))
+}
+
+isSquare = (n) => (Math.sqrt(n) % 1 === 0 ? true : false)
+
+isSquare = (n) => Number.isInteger(Math.sqrt(n))
+
+isSquare = (n) => /^[0-9]+$/.test(Math.sqrt(n))
+
+function isSquare(n) {
+  for (let x = 0; x <= n; x++) {
+    if (n === 0) {
+      return true
+    } else if (n / x === x) {
+      return true
+    }
+  }
+  return false
 }
