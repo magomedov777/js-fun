@@ -759,3 +759,25 @@ filter_list = (l) => l.filter((el) => el !== String(el))
 rowSumOddNumbers = (n) => n ** 3
 
 sumTwoSmallestNumbers = (a) => (a = a.sort((x, y) => x - y))[0] + a[1]
+
+let isValid = (formula) =>
+  !(formula.includes(1) && formula.includes(2)) &&
+  !(formula.includes(3) && formula.includes(4)) &&
+  formula.includes(5) === formula.includes(6) &&
+  (formula.includes(7) || formula.includes(8))
+
+function isValid(formula) {
+  let m = [0, 0, 0, 0]
+  formula.forEach((e) => {
+    m[Math.ceil(e / 2 - 1)]++
+  })
+  return m[0] < 2 && m[1] < 2 && (m[2] === 0 || m[2] === 2) && m[3] > 0
+}
+
+function isIsogram(str) {
+  return new Set(str.toUpperCase()).size == str.length
+}
+
+isIsogram = (str) => !/(\w).*\1/i.test(str)
+
+isIsogram = (str) => !str.match(/([a-z]).*\1/i)
