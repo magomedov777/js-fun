@@ -753,3 +753,9 @@ function startingMark(bodyHeight) {
     m = (b.y - a.y) / (b.x - a.x)
   return Math.round((m * bodyHeight + b.y - m * b.x) * 100) / 100
 }
+
+filter_list = (l) => l.filter((el) => el !== String(el))
+
+rowSumOddNumbers = (n) => n ** 3
+
+sumTwoSmallestNumbers = (a) => (a = a.sort((x, y) => x - y))[0] + a[1]
