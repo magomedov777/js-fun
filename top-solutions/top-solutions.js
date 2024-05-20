@@ -781,3 +781,27 @@ function isIsogram(str) {
 isIsogram = (str) => !/(\w).*\1/i.test(str)
 
 isIsogram = (str) => !str.match(/([a-z]).*\1/i)
+
+function findShort(s) {
+  let arr = s.split(' ')
+  let smallest = arr[0]
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length < smallest.length) {
+      smallest = arr[i]
+    }
+  }
+  return smallest.length
+}
+
+findShort = (s) =>
+  Math.min.apply(
+    this,
+    s.split(' ').map((el) => el.length)
+  )
+
+XO = (str) => str.replace(/o/gi, '').length == str.replace(/x/gi, '').length
+
+function XO(str) {
+  str = str.toLowerCase().split('')
+  return str.filter((x) => x === 'x').length === str.filter((x) => x === 'o').length
+}
