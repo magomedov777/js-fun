@@ -832,3 +832,16 @@ function accum(str) {
   }
   return res.join('-')
 }
+
+function descendingOrder(n) {
+  n = [...n.toString()]
+  return Number(n.sort().reverse().join(''))
+}
+
+descendingOrder = (n) => +[...`${n}`].sort().reverse().join(``)
+
+function disemvowel(str) {
+  return str.replace(/[aeiouAEUIOU]/g, '')
+}
+
+disemvowel = (str) => str.replace(/[aeiou]/gi, '')
