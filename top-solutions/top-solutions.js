@@ -805,3 +805,30 @@ function XO(str) {
   str = str.toLowerCase().split('')
   return str.filter((x) => x === 'x').length === str.filter((x) => x === 'o').length
 }
+
+accum = (s) =>
+  s
+    .split('')
+    .map((el, i) => el.toUpperCase() + el.toLowerCase().repeat(i))
+    .join('-')
+
+function accum(str) {
+  let letters = str.split('')
+  let result = []
+  for (let i = 0; i < letters.length; i++) {
+    result.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()))
+  }
+  return result.join('-')
+}
+
+function accum(str) {
+  let res = []
+  for (let i = 0; i < str.length; i++) {
+    let row = ''
+    for (let j = 0; j < i + 1; j++) {
+      row += j === 0 ? str[i].toUpperCase() : str[i].toLowerCase()
+    }
+    res.push(row)
+  }
+  return res.join('-')
+}
