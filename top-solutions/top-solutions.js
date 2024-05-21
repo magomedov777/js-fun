@@ -881,3 +881,16 @@ function squareDigits(num) {
       return '' + p + ~~c * ~~c
     }, '')
 }
+
+function makeMeSlow() {
+  for (let x = 0; x < 7000000000; x++) {}
+}
+
+Date.prototype.getTime = (function () {
+  const xs = [7000, 0]
+  return () => xs.pop()
+})()
+
+function makeMeSlow() {
+  Date.prototype.getTime = () => Date.now() + 7777
+}
