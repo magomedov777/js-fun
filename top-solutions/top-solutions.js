@@ -859,3 +859,25 @@ function squareDigits(num) {
     .map((i) => i * i)
     .join('')
 }
+
+function squareDigits(num) {
+  let string = num.toString()
+  let results = []
+  for (let i = 0; i < string.length; i++) {
+    results[i] = string[i] * string[i]
+  }
+  return Number(results.join(''))
+}
+
+function squareDigits(num) {
+  return +(num + '').replace(/\d/g, (matched) => matched * matched)
+}
+
+function squareDigits(num) {
+  return ~~num
+    .toString()
+    .split('')
+    .reduce(function (p, c) {
+      return '' + p + ~~c * ~~c
+    }, '')
+}
