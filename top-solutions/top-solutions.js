@@ -845,3 +845,17 @@ function disemvowel(str) {
 }
 
 disemvowel = (str) => str.replace(/[aeiou]/gi, '')
+
+squareDigits = (num) =>
+  +String(num)
+    .split('')
+    .map((el) => el ** 2)
+    .join('')
+
+function squareDigits(num) {
+  return +num
+    .toString()
+    .split('')
+    .map((i) => i * i)
+    .join('')
+}
