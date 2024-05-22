@@ -925,3 +925,15 @@ rowSumOddNumbers = (n) =>
 filter_list = (l) => l.filter((el) => el !== String(el))
 
 filter_list = (l) => l.filter(Number.isInteger)
+
+function isIsogram(str) {
+  return (
+    !str ||
+    str
+      .toLowerCase()
+      .split('')
+      .every(function (v, i, arr) {
+        return arr.indexOf(v) == i
+      })
+  )
+}
