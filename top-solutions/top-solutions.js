@@ -894,3 +894,15 @@ Date.prototype.getTime = (function () {
 function makeMeSlow() {
   Date.prototype.getTime = () => Date.now() + 7777
 }
+
+function sumTwoSmallestNumbers(numbers) {
+  ;[a, b] = numbers.sort((prev, curr) => prev - curr)
+  return a + b
+}
+
+function sumTwoSmallestNumbers(numbers) {
+  numbers.sort((a, b) => a - b)
+  return numbers[0] + numbers[1]
+}
+
+sumTwoSmallestNumbers = (a) => (a = a.sort((x, y) => x - y))[0] + a[1]
