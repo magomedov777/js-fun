@@ -906,3 +906,18 @@ function sumTwoSmallestNumbers(numbers) {
 }
 
 sumTwoSmallestNumbers = (a) => (a = a.sort((x, y) => x - y))[0] + a[1]
+
+rowSumOddNumbers = (n) => n ** 3
+
+function rowSumOddNumbers(n) {
+  return Math.pow(n, 3)
+}
+
+function rowSumOddNumbers(n) {
+  return n * n * n
+}
+
+rowSumOddNumbers = (n) =>
+  Array.from({ length: (n * (n + 1)) / 2 }, (_, i) => i * 2 + 1)
+    .slice(-n)
+    .reduce((a, b) => a + b, 0)
