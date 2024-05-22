@@ -921,3 +921,7 @@ rowSumOddNumbers = (n) =>
   Array.from({ length: (n * (n + 1)) / 2 }, (_, i) => i * 2 + 1)
     .slice(-n)
     .reduce((a, b) => a + b, 0)
+
+filter_list = (l) => l.filter((el) => el !== String(el))
+
+filter_list = (l) => l.filter(Number.isInteger)
