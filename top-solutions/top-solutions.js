@@ -945,3 +945,21 @@ function getMiddle(s) {
 }
 
 getMiddle = (s) => s.substr((s.length - 1) >>> 1, (~s.length & 1) + 1)
+
+String.prototype.toJadenCase = function () {
+  return this.split(' ')
+    .map((el) => el[0].toUpperCase() + el.slice(1))
+    .join(' ')
+}
+
+String.prototype.toJadenCase = function () {
+  return this.replace(/(^|\s)[a-z]/g, function (x) {
+    return x.toUpperCase()
+  })
+}
+
+String.prototype.toJadenCase = function () {
+  return this.replace(/(?:^|\s)\S/g, function (c) {
+    return c.toUpperCase()
+  })
+}
