@@ -937,3 +937,11 @@ function isIsogram(str) {
       })
   )
 }
+
+getMiddle = (s) => s.slice((s.length - 1) / 2, s.length / 2 + 1)
+
+function getMiddle(s) {
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1)
+}
+
+getMiddle = (s) => s.substr((s.length - 1) >>> 1, (~s.length & 1) + 1)
