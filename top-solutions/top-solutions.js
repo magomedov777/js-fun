@@ -963,3 +963,13 @@ String.prototype.toJadenCase = function () {
     return c.toUpperCase()
   })
 }
+
+function GetSum(a, b) {
+  return ((Math.abs(a - b) + 1) * (a + b)) / 2
+}
+
+function getSum(a, b) {
+  let min = Math.min(a, b)
+  let max = Math.max(a, b)
+  return ((max - min + 1) * (min + max)) / 2
+}
