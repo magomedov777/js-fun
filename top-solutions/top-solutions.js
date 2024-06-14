@@ -973,3 +973,15 @@ function getSum(a, b) {
   let max = Math.max(a, b)
   return ((max - min + 1) * (min + max)) / 2
 }
+
+maskify = (cc) => '#'.repeat(Math.max(0, cc.length - 4)) + cc.substr(-4)
+
+function maskify(cc) {
+  return cc.replace(/.(?=.{4})/g, '#')
+}
+
+function maskify(cc) {
+  return cc.replace(/.(?=....)/g, '#')
+}
+
+maskify = (cc) => cc.slice(-4).padStart(cc.length, '#')
