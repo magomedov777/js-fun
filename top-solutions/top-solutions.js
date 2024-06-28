@@ -1042,3 +1042,35 @@ function descendingOrder(n) {
 }
 
 descendingOrder = (n) => +[...`${n}`].sort().reverse().join(``)
+
+isSquare = (n) => (n ** (1 / 2) % 1 === 0 ? true : false)
+
+isSquare = (n) => Math.sqrt(n) === Math.trunc(Math.sqrt(n))
+
+isSquare = (n) => /^[0-9]+$/.test(Math.sqrt(n))
+
+function isSquare(n) {
+  return Math.floor(Math.sqrt(n)) * Math.floor(Math.sqrt(n)) == n
+}
+
+const squares = new Array(65536)
+  .join(',')
+  .split(',')
+  .map(function (n, i) {
+    return i * i
+  })
+
+function isSquare(n) {
+  return squares.indexOf(n) > -1
+}
+
+startingMark = (bodyHeight) => {
+  const relativeHeight = bodyHeight - 1.52
+  const adjustmentConstant = (10.67 - 9.45) / (1.83 - 1.52)
+  const bestMark = 9.45 + relativeHeight * adjustmentConstant
+  return Math.round(bestMark * 100) / 100
+}
+
+function startingMark(bodyHeight) {
+  return +(bodyHeight * 3.935484 + 3.468065).toFixed(2)
+}
