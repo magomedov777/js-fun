@@ -985,3 +985,60 @@ function maskify(cc) {
 }
 
 maskify = (cc) => cc.slice(-4).padStart(cc.length, '#')
+
+function disemvowel(str) {
+  return (str || '').replace(/[aeiou]/gi, '')
+}
+
+const vowels = 'aeiou'
+function disemvowel(str) {
+  return str
+    .split('')
+    .filter((letter) => !vowels.includes(letter.toLowerCase()))
+    .join('')
+}
+
+const disemvowel = (str) => {
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  let newStr = ''
+  for (let i = 0; i <= str.length; i++) {
+    let char = str.charAt(i)
+    if (vowels.indexOf(char) == -1) {
+      newStr += char
+    }
+  }
+  return newStr
+}
+
+function disemvowel(str) {
+  let vowels = ['a', 'e', 'i', 'o', 'u']
+  return str
+    .split('')
+    .filter(function (el) {
+      return vowels.indexOf(el.toLowerCase()) == -1
+    })
+    .join('')
+}
+
+function disemvowel(str) {
+  return str.replace(/[aeiouAEUIOU]/g, '')
+}
+
+descendingOrder = (n) =>
+  n === 0
+    ? 0
+    : +String(n)
+        .split('')
+        .sort((a, b) => b - a)
+        .join('')
+
+function descendingOrder(n) {
+  return parseInt(String(n).split('').sort().reverse().join(''))
+}
+
+function descendingOrder(n) {
+  n = [...n.toString()]
+  return Number(n.sort().reverse().join(''))
+}
+
+descendingOrder = (n) => +[...`${n}`].sort().reverse().join(``)
